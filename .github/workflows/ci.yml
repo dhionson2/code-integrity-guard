@@ -1,0 +1,47 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+      - name: Verify and install all modules and examples
+        run: ./mvnw --batch-mode --no-transfer-progress clean install
+      - name: Verify independent consumer and real Maven goal
+        run: ./mvnw --batch-mode --no-transfer-progress -f integration-consumer/pom.xml clean verify
+  pit-quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+      - name: Install the reactor for the standalone example
+        run: ./mvnw --batch-mode --no-transfer-progress clean install
+      - name: Pass the valid current-run PIT report at a 60 percent threshold
+        run: ./mvnw --batch-mode --no-transfer-progress -f examples/spring-boot-authorization/pom.xml verify -Ppit-validation -Dcig.minimumMutationPercent=60
+      - name: Validate real PIT result and partial coverage metadata
+        run: jq -e '.pit.status == "AVAILABLE" and .pit.partialCoverage == true and .pit.detected == 7 and .pit.total == 11 and .pit.scope == "io.github.dhionson2.example.CustomerController" and .pit.expectedScope == ["io.github.dhionson2.example.CustomerController"]' examples/spring-boot-authorization/target/code-integrity-guard/report.json
+      - name: Confirm the same score fails a 70 percent threshold
+        shell: bash
+        run: |
+          set +e
+          ./mvnw --batch-mode --no-transfer-progress -f examples/spring-boot-authorization/pom.xml verify -Ppit-validation -Dcig.minimumMutationPercent=70
+          maven_status=$?
+          set -e
+          test "$maven_status" -ne 0
+          report=examples/spring-boot-authorization/target/code-integrity-guard/report.json
+          test -f "$report"
+          jq -e '.buildStatus == "FAILED" and .pit.status == "AVAILABLE" and .pit.partialCoverage == true and .pit.detected == 7 and .pit.total == 11 and any(.gates[]; contains("Mutation score below configured minimum"))' "$report"

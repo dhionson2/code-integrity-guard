@@ -1,0 +1,2 @@
+# id	severity	scope	description	testIds	scenarioIds
+CUSTOMER-OWNER-ISOLATION	HIGH	GET /clientes/{id}	A customer can only be read by its owner	customer.ownerCrossAccessFixed	customer.aliceReadsBobsCustomer

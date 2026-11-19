@@ -1,0 +1,5 @@
+Code Integrity Guard
+
+This project is distributed under the Apache License, Version 2.0. See LICENSE.
+
+No third-party NOTICE attributions have been asserted in this file. The SBOM in docs/release-evidence/cyclonedx-bom.json inventories Maven dependency license metadata; that metadata still requires human compatibility review before distribution.

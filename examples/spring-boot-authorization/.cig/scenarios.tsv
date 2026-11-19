@@ -1,0 +1,2 @@
+# scenarioId	contractId	testId	type	actor	resourceOwner	resource	operation	actorHeader	expectedStatus
+customer.aliceReadsBobsCustomer	CUSTOMER-OWNER-ISOLATION	customer.ownerCrossAccessFixed	CROSS_OWNER	alice	bob	/customer/b	GET /clientes/b		404

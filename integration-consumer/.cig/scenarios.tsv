@@ -1,0 +1,3 @@
+# scenarioId	contractId	testId	type	actor	resourceOwner	resource	operation	actorHeader	expectedStatus
+consumer.aliceReadsBobsResource	CONSUMER-OWNER-CHECK	consumer.authz.ownerCheck	CROSS_OWNER	alice	bob	/resource/42	GET /resource/42	X-Actor	404
+consumer.aliceReadsBobsResource.failsafe	CONSUMER-OWNER-CHECK	consumer.authz.ownerCheck.failsafe	CROSS_OWNER	alice	bob	/resource/43	GET /resource/43	X-Actor	404

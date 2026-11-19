@@ -1,0 +1,10 @@
+target/
+.tools/
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+.DS_Store
+/docs/requirements/jira-backlog.md

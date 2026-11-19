@@ -1,0 +1,2 @@
+# id	severity	scope	description	testIds	scenarioIds
+CONSUMER-OWNER-CHECK	HIGH	GET /resource/{id}	A non-owner cannot read another owner's resource	consumer.authz.ownerCheck,consumer.authz.ownerCheck.failsafe	consumer.aliceReadsBobsResource,consumer.aliceReadsBobsResource.failsafe

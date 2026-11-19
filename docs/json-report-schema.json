@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/dhionson2/code-integrity-guard/blob/main/docs/json-report-schema.json",
+  "title": "Code Integrity Guard audit report",
+  "type": "object",
+  "required": ["schemaVersion", "buildStatus", "contractsEvaluation", "contractsManifestStatus", "evidenceRun", "contracts", "pit", "gates", "limitations"],
+  "properties": {
+    "schemaVersion": {"const": "1.2"},
+    "buildStatus": {"enum": ["AUDIT_RECORDED", "FAILED"]},
+    "contractsEvaluation": {"enum": ["EVALUATED", "NOT_RUN"]},
+    "contractsManifestStatus": {"enum": ["PRESENT", "MISSING", "EMPTY", "INVALID"]},
+    "evidenceRun": {"type": "object", "required": ["runId", "origin"], "properties": {"runId": {"type": "string"}, "origin": {"type": "string"}}, "additionalProperties": true},
+    "contracts": {"type": "array", "items": {"type": "object", "required": ["id", "status", "explanation", "executionEvidence", "declaredScenarios", "scenarioEvidence"], "properties": {"id": {"type": ["string", "null"]}, "status": {"enum": ["VERIFIED", "FAILED", "UNVERIFIED", "INCONCLUSIVE"]}, "explanation": {"type": ["string", "null"]}, "executionEvidence": {"type": "array"}, "declaredScenarios": {"type": "array"}, "scenarioEvidence": {"type": "array"}}, "additionalProperties": true}},
+    "pit": {"type": "object", "required": ["status", "scope", "expectedScope", "partialCoverage", "detected", "total", "excluded", "score", "reason", "mutations"], "properties": {"status": {"enum": ["AVAILABLE", "INCONCLUSIVE"]}, "scope": {"type": ["string", "null"]}, "expectedScope": {"type": "array", "items": {"type": "string"}}, "partialCoverage": {"type": ["boolean", "null"], "description": "PIT's coverage metadata; true does not mean mutation execution was interrupted."}, "detected": {"type": "integer", "minimum": 0}, "total": {"type": "integer", "minimum": 0}, "excluded": {"type": "integer", "minimum": 0}, "score": {"type": "number", "minimum": 0, "maximum": 1}, "reason": {"type": ["string", "null"]}, "mutations": {"type": "array"}}, "additionalProperties": true},
+    "gates": {"type": "array", "items": {"type": "string"}},
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}
