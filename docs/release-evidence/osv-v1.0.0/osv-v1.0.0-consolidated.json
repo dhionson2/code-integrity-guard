@@ -1,0 +1,31 @@
+{
+  "scanner": "OSV-Scanner",
+  "scannerVersion": "2.7.1",
+  "scalibrVersion": "0.5.3",
+  "databaseQueryDate": "2026-11-20",
+  "scanMethod": "scan source --lockfile <CycloneDX .cdx.json> --format json --all-packages --all-vulns --output-file <path>",
+  "totals": {"completedSboms": 5, "inconclusiveSboms": 1, "advisoryInstances": 8, "critical": 0, "high": 3, "moderate": 2, "low": 3, "unknown": 0},
+  "sboms": [
+    {"coordinate":"io.github.dhionson2:code-integrity-guard-parent:1.0.0","file":"sbom-code-integrity-guard-parent-1.0.0.json","components":0,"exitCode":128,"status":"INCONCLUSIVE_NO_PACKAGES"},
+    {"coordinate":"io.github.dhionson2:code-integrity-guard-core:1.0.0","file":"sbom-code-integrity-guard-core-1.0.0.json","components":8,"packagesScanned":8,"exitCode":0,"status":"COMPLETED_NO_FINDINGS"},
+    {"coordinate":"io.github.dhionson2:code-integrity-guard-testkit:1.0.0","file":"sbom-code-integrity-guard-testkit-1.0.0.json","components":18,"packagesScanned":18,"exitCode":1,"status":"COMPLETED_WITH_FINDINGS","advisoryInstances":6},
+    {"coordinate":"io.github.dhionson2:code-integrity-guard-pit-adapter:1.0.0","file":"sbom-code-integrity-guard-pit-adapter-1.0.0.json","components":9,"packagesScanned":9,"exitCode":0,"status":"COMPLETED_NO_FINDINGS"},
+    {"coordinate":"io.github.dhionson2:code-integrity-guard-report:1.0.0","file":"sbom-code-integrity-guard-report-1.0.0.json","components":15,"packagesScanned":15,"exitCode":0,"status":"COMPLETED_NO_FINDINGS"},
+    {"coordinate":"io.github.dhionson2:code-integrity-guard-maven-plugin:1.0.0","file":"sbom-code-integrity-guard-maven-plugin-1.0.0.json","components":46,"packagesScanned":46,"exitCode":1,"status":"COMPLETED_WITH_FINDINGS","advisoryInstances":2}
+  ],
+  "findings": [
+    {"artifact":"code-integrity-guard-testkit","component":"org.springframework:spring-core","version":"6.2.15","osvId":"GHSA-659m-px2c-25wj","aliases":["CVE-2026-41848"],"severity":"LOW","mavenScope":"provided (transitive via spring-test/spring-security-core)"},
+    {"artifact":"code-integrity-guard-testkit","component":"org.springframework:spring-expression","version":"6.2.15","osvId":"GHSA-9f52-rjqv-25qv","aliases":["CVE-2026-41852"],"severity":"LOW","mavenScope":"provided (transitive via spring-security-core)"},
+    {"artifact":"code-integrity-guard-testkit","component":"org.springframework:spring-expression","version":"6.2.15","osvId":"GHSA-r5w3-xv2f-j59q","aliases":["CVE-2026-41850"],"severity":"HIGH","mavenScope":"provided (transitive via spring-security-core)"},
+    {"artifact":"code-integrity-guard-testkit","component":"org.springframework:spring-expression","version":"6.2.15","osvId":"GHSA-wxpp-56q6-5pcg","aliases":["CVE-2026-41851"],"severity":"MODERATE","mavenScope":"provided (transitive via spring-security-core)"},
+    {"artifact":"code-integrity-guard-testkit","component":"org.springframework.security:spring-security-core","version":"6.4.13","osvId":"GHSA-vxf7-qj7q-83fh","aliases":["CVE-2026-22746"],"severity":"LOW","mavenScope":"provided (direct)"},
+    {"artifact":"code-integrity-guard-testkit","component":"org.springframework.security:spring-security-core","version":"6.4.13","osvId":"GHSA-x2wq-9x2f-fhj7","aliases":["CVE-2026-22751"],"severity":"MODERATE","mavenScope":"provided (direct)"},
+    {"artifact":"code-integrity-guard-maven-plugin","component":"com.google.guava:guava","version":"33.2.1-jre","osvId":"GHSA-xxph-c9ww-hj94","aliases":["CVE-2026-102554"],"severity":"HIGH","mavenScope":"provided (transitive via Maven Core/Guice; host Maven runtime)"},
+    {"artifact":"code-integrity-guard-maven-plugin","component":"org.codehaus.plexus:plexus-utils","version":"3.5.1","osvId":"GHSA-6fmv-xxpf-w3cw","aliases":["CVE-2025-67030"],"severity":"HIGH","mavenScope":"provided (transitive via Maven APIs/Core; host Maven runtime)"}
+  ],
+  "limitations": [
+    "Parent POM CycloneDX contained zero components; OSV-Scanner exited 128 with 'No package sources found'. Its analysis is inconclusive, not a clean scan.",
+    "CycloneDX component scopes were all marked required by the generator; actual Maven scopes were mapped from fresh dependency:tree output for all five library/plugin modules.",
+    "Provided findings are not bundled runtime dependencies of the published JARs and provided dependencies are not transitively supplied to consumers; they remain relevant to the testkit consumer test classpath and to Maven host versions executing the plugin."
+  ]
+}

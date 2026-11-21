@@ -1,0 +1,216 @@
+JDK=openjdk version "21.0.13.1" 2026-11-17 LTS
+JDK archive SHA-256: bb8a93f9ae6e7a693b2b721e85dbeff26ae1a77447985a8d7afcdd9c7cf6222e
+Root LICENSE SHA-256: cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30
+Root NOTICE SHA-256: a1b723d9e939ea5ed87a0db2e38e36af7113a160fa3a6d72288951859675b8aa
+
+=== code-integrity-guard-core ===
+JAR: code-integrity-guard-core/target/code-integrity-guard-core-1.0.0-javadoc.jar
+316ce09c62cc56d5e7992d89f0e56fc1ffef41820dcc1fb3e30ab17fbc18910b  /mnt/d/dev/code-integrity-guard/code-integrity-guard-core/target/code-integrity-guard-core-1.0.0-javadoc.jar
+copy.svg
+legal/
+legal/ADDITIONAL_LICENSE_INFO
+legal/ASSEMBLY_EXCEPTION
+legal/LICENSE
+legal/jquery.md
+legal/jqueryUI.md
+link.svg
+resources/LICENSE
+resources/NOTICE
+resources/glass.png
+resources/x.png
+script-dir/jquery-3.7.1.min.js
+script-dir/jquery-ui.min.css
+script-dir/jquery-ui.min.js
+script.js
+search-page.js
+search.js
+stylesheet.css
+legal/LICENSE source_sha256=4b9abebc4338048a7c2dc184e9f800deb349366bdf28eb23c2677a77b4c87726 jar_sha256=4b9abebc4338048a7c2dc184e9f800deb349366bdf28eb23c2677a77b4c87726
+legal/ADDITIONAL_LICENSE_INFO source_sha256=a69bce275ba7a3570af6579cb0f55682cd75fedfcd49e0e8e9022270c447c916 jar_sha256=a69bce275ba7a3570af6579cb0f55682cd75fedfcd49e0e8e9022270c447c916
+legal/ASSEMBLY_EXCEPTION source_sha256=75292f03bf23d3db7c985aecc191029b93883200721ed23ed34a2e601463df33 jar_sha256=75292f03bf23d3db7c985aecc191029b93883200721ed23ed34a2e601463df33
+legal/jquery.md source_sha256=b68f454c2bd58959c862d94bf0f16c3f78a2d537388ca060d354344db80ee695 jar_sha256=b68f454c2bd58959c862d94bf0f16c3f78a2d537388ca060d354344db80ee695
+legal/jqueryUI.md source_sha256=7854d2d568992ae25ff65867bd9021d655f70670142f0796b29a3b0621f19530 jar_sha256=7854d2d568992ae25ff65867bd9021d655f70670142f0796b29a3b0621f19530
+resources/LICENSE source_sha256=cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30 jar_sha256=cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30
+resources/NOTICE source_sha256=a1b723d9e939ea5ed87a0db2e38e36af7113a160fa3a6d72288951859675b8aa jar_sha256=a1b723d9e939ea5ed87a0db2e38e36af7113a160fa3a6d72288951859675b8aa
+copy.svg javadoc_output_sha256=980d3ba5caa63c212658a2996f42a8e51174bc4e5b758b5b7d844ed316bed724 jar_sha256=980d3ba5caa63c212658a2996f42a8e51174bc4e5b758b5b7d844ed316bed724
+link.svg javadoc_output_sha256=febc0b0e05f7951f832f7bcc840bff48d72c39ac4b1aef836892ae2dd6b5e5bb jar_sha256=febc0b0e05f7951f832f7bcc840bff48d72c39ac4b1aef836892ae2dd6b5e5bb
+script.js javadoc_output_sha256=e35eef452664a415c0c6d89ecd4db3718a09b0d7ff515f88c2c5447616ea2921 jar_sha256=e35eef452664a415c0c6d89ecd4db3718a09b0d7ff515f88c2c5447616ea2921
+search.js javadoc_output_sha256=6e13e0f88217ee5dacac33fa57b0b835d71b894207f838712ee751363a828425 jar_sha256=6e13e0f88217ee5dacac33fa57b0b835d71b894207f838712ee751363a828425
+search-page.js javadoc_output_sha256=6549cef127d7807ad63ae29d3985eb0c6f370d5e0ac8137bdd2829c5c63b6f86 jar_sha256=6549cef127d7807ad63ae29d3985eb0c6f370d5e0ac8137bdd2829c5c63b6f86
+stylesheet.css javadoc_output_sha256=84019efdfc9438b9eef2c191d3c689c1841146120ec8ebb8bae055e56cb3566d jar_sha256=84019efdfc9438b9eef2c191d3c689c1841146120ec8ebb8bae055e56cb3566d
+CHECKS: seven legal/Apache/NOTICE files byte-identical to sources; six JDK standard-doclet files byte-identical to generated output; GPLv2/Classpath headers preserved; no java.base pointers; MIT and CC0 notice text present; no demos directory shipped
+jQuery header: /*! jQuery v3.7.1 | (c) OpenJS Foundation and other contributors | jquery.org/license */
+!function(e
+jQuery UI header: /*! jQuery UI - v1.14.1 - 2025-01-13
+* https://jqueryui.com
+* Includes: widget.js, position.js, keyc
+
+=== code-integrity-guard-testkit ===
+JAR: code-integrity-guard-testkit/target/code-integrity-guard-testkit-1.0.0-javadoc.jar
+5eb9267772bffe55265a612e6067b721a76a16356ae8caafce374caafd84e6e8  /mnt/d/dev/code-integrity-guard/code-integrity-guard-testkit/target/code-integrity-guard-testkit-1.0.0-javadoc.jar
+copy.svg
+legal/
+legal/ADDITIONAL_LICENSE_INFO
+legal/ASSEMBLY_EXCEPTION
+legal/LICENSE
+legal/jquery.md
+legal/jqueryUI.md
+link.svg
+resources/LICENSE
+resources/NOTICE
+resources/glass.png
+resources/x.png
+script-dir/jquery-3.7.1.min.js
+script-dir/jquery-ui.min.css
+script-dir/jquery-ui.min.js
+script.js
+search-page.js
+search.js
+stylesheet.css
+legal/LICENSE source_sha256=4b9abebc4338048a7c2dc184e9f800deb349366bdf28eb23c2677a77b4c87726 jar_sha256=4b9abebc4338048a7c2dc184e9f800deb349366bdf28eb23c2677a77b4c87726
+legal/ADDITIONAL_LICENSE_INFO source_sha256=a69bce275ba7a3570af6579cb0f55682cd75fedfcd49e0e8e9022270c447c916 jar_sha256=a69bce275ba7a3570af6579cb0f55682cd75fedfcd49e0e8e9022270c447c916
+legal/ASSEMBLY_EXCEPTION source_sha256=75292f03bf23d3db7c985aecc191029b93883200721ed23ed34a2e601463df33 jar_sha256=75292f03bf23d3db7c985aecc191029b93883200721ed23ed34a2e601463df33
+legal/jquery.md source_sha256=b68f454c2bd58959c862d94bf0f16c3f78a2d537388ca060d354344db80ee695 jar_sha256=b68f454c2bd58959c862d94bf0f16c3f78a2d537388ca060d354344db80ee695
+legal/jqueryUI.md source_sha256=7854d2d568992ae25ff65867bd9021d655f70670142f0796b29a3b0621f19530 jar_sha256=7854d2d568992ae25ff65867bd9021d655f70670142f0796b29a3b0621f19530
+resources/LICENSE source_sha256=cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30 jar_sha256=cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30
+resources/NOTICE source_sha256=a1b723d9e939ea5ed87a0db2e38e36af7113a160fa3a6d72288951859675b8aa jar_sha256=a1b723d9e939ea5ed87a0db2e38e36af7113a160fa3a6d72288951859675b8aa
+copy.svg javadoc_output_sha256=980d3ba5caa63c212658a2996f42a8e51174bc4e5b758b5b7d844ed316bed724 jar_sha256=980d3ba5caa63c212658a2996f42a8e51174bc4e5b758b5b7d844ed316bed724
+link.svg javadoc_output_sha256=febc0b0e05f7951f832f7bcc840bff48d72c39ac4b1aef836892ae2dd6b5e5bb jar_sha256=febc0b0e05f7951f832f7bcc840bff48d72c39ac4b1aef836892ae2dd6b5e5bb
+script.js javadoc_output_sha256=e35eef452664a415c0c6d89ecd4db3718a09b0d7ff515f88c2c5447616ea2921 jar_sha256=e35eef452664a415c0c6d89ecd4db3718a09b0d7ff515f88c2c5447616ea2921
+search.js javadoc_output_sha256=6e13e0f88217ee5dacac33fa57b0b835d71b894207f838712ee751363a828425 jar_sha256=6e13e0f88217ee5dacac33fa57b0b835d71b894207f838712ee751363a828425
+search-page.js javadoc_output_sha256=6549cef127d7807ad63ae29d3985eb0c6f370d5e0ac8137bdd2829c5c63b6f86 jar_sha256=6549cef127d7807ad63ae29d3985eb0c6f370d5e0ac8137bdd2829c5c63b6f86
+stylesheet.css javadoc_output_sha256=84019efdfc9438b9eef2c191d3c689c1841146120ec8ebb8bae055e56cb3566d jar_sha256=84019efdfc9438b9eef2c191d3c689c1841146120ec8ebb8bae055e56cb3566d
+CHECKS: seven legal/Apache/NOTICE files byte-identical to sources; six JDK standard-doclet files byte-identical to generated output; GPLv2/Classpath headers preserved; no java.base pointers; MIT and CC0 notice text present; no demos directory shipped
+jQuery header: /*! jQuery v3.7.1 | (c) OpenJS Foundation and other contributors | jquery.org/license */
+!function(e
+jQuery UI header: /*! jQuery UI - v1.14.1 - 2025-01-13
+* https://jqueryui.com
+* Includes: widget.js, position.js, keyc
+
+=== code-integrity-guard-pit-adapter ===
+JAR: code-integrity-guard-pit-adapter/target/code-integrity-guard-pit-adapter-1.0.0-javadoc.jar
+11477fcb577dacb43ec035e799f51cc2f376c2b3acb7530e47316e27d6572891  /mnt/d/dev/code-integrity-guard/code-integrity-guard-pit-adapter/target/code-integrity-guard-pit-adapter-1.0.0-javadoc.jar
+copy.svg
+legal/
+legal/ADDITIONAL_LICENSE_INFO
+legal/ASSEMBLY_EXCEPTION
+legal/LICENSE
+legal/jquery.md
+legal/jqueryUI.md
+link.svg
+resources/LICENSE
+resources/NOTICE
+resources/glass.png
+resources/x.png
+script-dir/jquery-3.7.1.min.js
+script-dir/jquery-ui.min.css
+script-dir/jquery-ui.min.js
+script.js
+search-page.js
+search.js
+stylesheet.css
+legal/LICENSE source_sha256=4b9abebc4338048a7c2dc184e9f800deb349366bdf28eb23c2677a77b4c87726 jar_sha256=4b9abebc4338048a7c2dc184e9f800deb349366bdf28eb23c2677a77b4c87726
+legal/ADDITIONAL_LICENSE_INFO source_sha256=a69bce275ba7a3570af6579cb0f55682cd75fedfcd49e0e8e9022270c447c916 jar_sha256=a69bce275ba7a3570af6579cb0f55682cd75fedfcd49e0e8e9022270c447c916
+legal/ASSEMBLY_EXCEPTION source_sha256=75292f03bf23d3db7c985aecc191029b93883200721ed23ed34a2e601463df33 jar_sha256=75292f03bf23d3db7c985aecc191029b93883200721ed23ed34a2e601463df33
+legal/jquery.md source_sha256=b68f454c2bd58959c862d94bf0f16c3f78a2d537388ca060d354344db80ee695 jar_sha256=b68f454c2bd58959c862d94bf0f16c3f78a2d537388ca060d354344db80ee695
+legal/jqueryUI.md source_sha256=7854d2d568992ae25ff65867bd9021d655f70670142f0796b29a3b0621f19530 jar_sha256=7854d2d568992ae25ff65867bd9021d655f70670142f0796b29a3b0621f19530
+resources/LICENSE source_sha256=cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30 jar_sha256=cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30
+resources/NOTICE source_sha256=a1b723d9e939ea5ed87a0db2e38e36af7113a160fa3a6d72288951859675b8aa jar_sha256=a1b723d9e939ea5ed87a0db2e38e36af7113a160fa3a6d72288951859675b8aa
+copy.svg javadoc_output_sha256=980d3ba5caa63c212658a2996f42a8e51174bc4e5b758b5b7d844ed316bed724 jar_sha256=980d3ba5caa63c212658a2996f42a8e51174bc4e5b758b5b7d844ed316bed724
+link.svg javadoc_output_sha256=febc0b0e05f7951f832f7bcc840bff48d72c39ac4b1aef836892ae2dd6b5e5bb jar_sha256=febc0b0e05f7951f832f7bcc840bff48d72c39ac4b1aef836892ae2dd6b5e5bb
+script.js javadoc_output_sha256=e35eef452664a415c0c6d89ecd4db3718a09b0d7ff515f88c2c5447616ea2921 jar_sha256=e35eef452664a415c0c6d89ecd4db3718a09b0d7ff515f88c2c5447616ea2921
+search.js javadoc_output_sha256=6e13e0f88217ee5dacac33fa57b0b835d71b894207f838712ee751363a828425 jar_sha256=6e13e0f88217ee5dacac33fa57b0b835d71b894207f838712ee751363a828425
+search-page.js javadoc_output_sha256=6549cef127d7807ad63ae29d3985eb0c6f370d5e0ac8137bdd2829c5c63b6f86 jar_sha256=6549cef127d7807ad63ae29d3985eb0c6f370d5e0ac8137bdd2829c5c63b6f86
+stylesheet.css javadoc_output_sha256=84019efdfc9438b9eef2c191d3c689c1841146120ec8ebb8bae055e56cb3566d jar_sha256=84019efdfc9438b9eef2c191d3c689c1841146120ec8ebb8bae055e56cb3566d
+CHECKS: seven legal/Apache/NOTICE files byte-identical to sources; six JDK standard-doclet files byte-identical to generated output; GPLv2/Classpath headers preserved; no java.base pointers; MIT and CC0 notice text present; no demos directory shipped
+jQuery header: /*! jQuery v3.7.1 | (c) OpenJS Foundation and other contributors | jquery.org/license */
+!function(e
+jQuery UI header: /*! jQuery UI - v1.14.1 - 2025-01-13
+* https://jqueryui.com
+* Includes: widget.js, position.js, keyc
+
+=== code-integrity-guard-report ===
+JAR: code-integrity-guard-report/target/code-integrity-guard-report-1.0.0-javadoc.jar
+2492f4f7cf23e252b2600a5c038c9bb35438f4247e011b8525364ea4991bbfa7  /mnt/d/dev/code-integrity-guard/code-integrity-guard-report/target/code-integrity-guard-report-1.0.0-javadoc.jar
+copy.svg
+legal/
+legal/ADDITIONAL_LICENSE_INFO
+legal/ASSEMBLY_EXCEPTION
+legal/LICENSE
+legal/jquery.md
+legal/jqueryUI.md
+link.svg
+resources/LICENSE
+resources/NOTICE
+resources/glass.png
+resources/x.png
+script-dir/jquery-3.7.1.min.js
+script-dir/jquery-ui.min.css
+script-dir/jquery-ui.min.js
+script.js
+search-page.js
+search.js
+stylesheet.css
+legal/LICENSE source_sha256=4b9abebc4338048a7c2dc184e9f800deb349366bdf28eb23c2677a77b4c87726 jar_sha256=4b9abebc4338048a7c2dc184e9f800deb349366bdf28eb23c2677a77b4c87726
+legal/ADDITIONAL_LICENSE_INFO source_sha256=a69bce275ba7a3570af6579cb0f55682cd75fedfcd49e0e8e9022270c447c916 jar_sha256=a69bce275ba7a3570af6579cb0f55682cd75fedfcd49e0e8e9022270c447c916
+legal/ASSEMBLY_EXCEPTION source_sha256=75292f03bf23d3db7c985aecc191029b93883200721ed23ed34a2e601463df33 jar_sha256=75292f03bf23d3db7c985aecc191029b93883200721ed23ed34a2e601463df33
+legal/jquery.md source_sha256=b68f454c2bd58959c862d94bf0f16c3f78a2d537388ca060d354344db80ee695 jar_sha256=b68f454c2bd58959c862d94bf0f16c3f78a2d537388ca060d354344db80ee695
+legal/jqueryUI.md source_sha256=7854d2d568992ae25ff65867bd9021d655f70670142f0796b29a3b0621f19530 jar_sha256=7854d2d568992ae25ff65867bd9021d655f70670142f0796b29a3b0621f19530
+resources/LICENSE source_sha256=cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30 jar_sha256=cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30
+resources/NOTICE source_sha256=a1b723d9e939ea5ed87a0db2e38e36af7113a160fa3a6d72288951859675b8aa jar_sha256=a1b723d9e939ea5ed87a0db2e38e36af7113a160fa3a6d72288951859675b8aa
+copy.svg javadoc_output_sha256=980d3ba5caa63c212658a2996f42a8e51174bc4e5b758b5b7d844ed316bed724 jar_sha256=980d3ba5caa63c212658a2996f42a8e51174bc4e5b758b5b7d844ed316bed724
+link.svg javadoc_output_sha256=febc0b0e05f7951f832f7bcc840bff48d72c39ac4b1aef836892ae2dd6b5e5bb jar_sha256=febc0b0e05f7951f832f7bcc840bff48d72c39ac4b1aef836892ae2dd6b5e5bb
+script.js javadoc_output_sha256=e35eef452664a415c0c6d89ecd4db3718a09b0d7ff515f88c2c5447616ea2921 jar_sha256=e35eef452664a415c0c6d89ecd4db3718a09b0d7ff515f88c2c5447616ea2921
+search.js javadoc_output_sha256=6e13e0f88217ee5dacac33fa57b0b835d71b894207f838712ee751363a828425 jar_sha256=6e13e0f88217ee5dacac33fa57b0b835d71b894207f838712ee751363a828425
+search-page.js javadoc_output_sha256=6549cef127d7807ad63ae29d3985eb0c6f370d5e0ac8137bdd2829c5c63b6f86 jar_sha256=6549cef127d7807ad63ae29d3985eb0c6f370d5e0ac8137bdd2829c5c63b6f86
+stylesheet.css javadoc_output_sha256=84019efdfc9438b9eef2c191d3c689c1841146120ec8ebb8bae055e56cb3566d jar_sha256=84019efdfc9438b9eef2c191d3c689c1841146120ec8ebb8bae055e56cb3566d
+CHECKS: seven legal/Apache/NOTICE files byte-identical to sources; six JDK standard-doclet files byte-identical to generated output; GPLv2/Classpath headers preserved; no java.base pointers; MIT and CC0 notice text present; no demos directory shipped
+jQuery header: /*! jQuery v3.7.1 | (c) OpenJS Foundation and other contributors | jquery.org/license */
+!function(e
+jQuery UI header: /*! jQuery UI - v1.14.1 - 2025-01-13
+* https://jqueryui.com
+* Includes: widget.js, position.js, keyc
+
+=== code-integrity-guard-maven-plugin ===
+JAR: code-integrity-guard-maven-plugin/target/code-integrity-guard-maven-plugin-1.0.0-javadoc.jar
+b75267074c6fa551105f5c41794a4bab280663ccc0a12d011623bda1a1951db0  /mnt/d/dev/code-integrity-guard/code-integrity-guard-maven-plugin/target/code-integrity-guard-maven-plugin-1.0.0-javadoc.jar
+copy.svg
+legal/
+legal/ADDITIONAL_LICENSE_INFO
+legal/ASSEMBLY_EXCEPTION
+legal/LICENSE
+legal/jquery.md
+legal/jqueryUI.md
+link.svg
+resources/LICENSE
+resources/NOTICE
+resources/glass.png
+resources/x.png
+script-dir/jquery-3.7.1.min.js
+script-dir/jquery-ui.min.css
+script-dir/jquery-ui.min.js
+script.js
+search-page.js
+search.js
+stylesheet.css
+legal/LICENSE source_sha256=4b9abebc4338048a7c2dc184e9f800deb349366bdf28eb23c2677a77b4c87726 jar_sha256=4b9abebc4338048a7c2dc184e9f800deb349366bdf28eb23c2677a77b4c87726
+legal/ADDITIONAL_LICENSE_INFO source_sha256=a69bce275ba7a3570af6579cb0f55682cd75fedfcd49e0e8e9022270c447c916 jar_sha256=a69bce275ba7a3570af6579cb0f55682cd75fedfcd49e0e8e9022270c447c916
+legal/ASSEMBLY_EXCEPTION source_sha256=75292f03bf23d3db7c985aecc191029b93883200721ed23ed34a2e601463df33 jar_sha256=75292f03bf23d3db7c985aecc191029b93883200721ed23ed34a2e601463df33
+legal/jquery.md source_sha256=b68f454c2bd58959c862d94bf0f16c3f78a2d537388ca060d354344db80ee695 jar_sha256=b68f454c2bd58959c862d94bf0f16c3f78a2d537388ca060d354344db80ee695
+legal/jqueryUI.md source_sha256=7854d2d568992ae25ff65867bd9021d655f70670142f0796b29a3b0621f19530 jar_sha256=7854d2d568992ae25ff65867bd9021d655f70670142f0796b29a3b0621f19530
+resources/LICENSE source_sha256=cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30 jar_sha256=cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30
+resources/NOTICE source_sha256=a1b723d9e939ea5ed87a0db2e38e36af7113a160fa3a6d72288951859675b8aa jar_sha256=a1b723d9e939ea5ed87a0db2e38e36af7113a160fa3a6d72288951859675b8aa
+copy.svg javadoc_output_sha256=980d3ba5caa63c212658a2996f42a8e51174bc4e5b758b5b7d844ed316bed724 jar_sha256=980d3ba5caa63c212658a2996f42a8e51174bc4e5b758b5b7d844ed316bed724
+link.svg javadoc_output_sha256=febc0b0e05f7951f832f7bcc840bff48d72c39ac4b1aef836892ae2dd6b5e5bb jar_sha256=febc0b0e05f7951f832f7bcc840bff48d72c39ac4b1aef836892ae2dd6b5e5bb
+script.js javadoc_output_sha256=e35eef452664a415c0c6d89ecd4db3718a09b0d7ff515f88c2c5447616ea2921 jar_sha256=e35eef452664a415c0c6d89ecd4db3718a09b0d7ff515f88c2c5447616ea2921
+search.js javadoc_output_sha256=6e13e0f88217ee5dacac33fa57b0b835d71b894207f838712ee751363a828425 jar_sha256=6e13e0f88217ee5dacac33fa57b0b835d71b894207f838712ee751363a828425
+search-page.js javadoc_output_sha256=6549cef127d7807ad63ae29d3985eb0c6f370d5e0ac8137bdd2829c5c63b6f86 jar_sha256=6549cef127d7807ad63ae29d3985eb0c6f370d5e0ac8137bdd2829c5c63b6f86
+stylesheet.css javadoc_output_sha256=84019efdfc9438b9eef2c191d3c689c1841146120ec8ebb8bae055e56cb3566d jar_sha256=84019efdfc9438b9eef2c191d3c689c1841146120ec8ebb8bae055e56cb3566d
+CHECKS: seven legal/Apache/NOTICE files byte-identical to sources; six JDK standard-doclet files byte-identical to generated output; GPLv2/Classpath headers preserved; no java.base pointers; MIT and CC0 notice text present; no demos directory shipped
+jQuery header: /*! jQuery v3.7.1 | (c) OpenJS Foundation and other contributors | jquery.org/license */
+!function(e
+jQuery UI header: /*! jQuery UI - v1.14.1 - 2025-01-13
+* https://jqueryui.com
+* Includes: widget.js, position.js, keyc
+
+Example artifact is excluded from public candidates by central-release skipPublishing=true.

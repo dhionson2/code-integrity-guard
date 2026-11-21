@@ -1,0 +1,1370 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.6",
+  "serialNumber" : "urn:uuid:255b747d-e5dd-33f0-9a35-40303113c9de",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2026-11-20T14:50:17Z",
+    "lifecycles" : [
+      {
+        "phase" : "build"
+      }
+    ],
+    "tools" : {
+      "components" : [
+        {
+          "type" : "library",
+          "author" : "OWASP Foundation",
+          "group" : "org.cyclonedx",
+          "name" : "cyclonedx-maven-plugin",
+          "version" : "2.9.3",
+          "description" : "CycloneDX Maven plugin",
+          "hashes" : [
+            {
+              "alg" : "MD5",
+              "content" : "e7c87ab327b65b23c681fc9dc8bb620b"
+            },
+            {
+              "alg" : "SHA-1",
+              "content" : "fa3f0f04f4d5077b5e085d4d09aa2e68aeba5260"
+            },
+            {
+              "alg" : "SHA-256",
+              "content" : "c452d5eebe28bc86bef2e7c72d129f04f60877bef843eac8120f01fb655be293"
+            },
+            {
+              "alg" : "SHA-512",
+              "content" : "ec0344ed2ffe62d565aaf936a37140d04c7fffa8669a666be0366cd44eec3195232d79841cdec47030b79068216ac7e1a8c805255758e3d418dae32a4b9b9beb"
+            },
+            {
+              "alg" : "SHA-384",
+              "content" : "3df26b2a00d87fe090851975ebcc30217f98634e7c47d07128e148f325ebfe3bc0790b2f52ad4591734b7b0de738f003"
+            },
+            {
+              "alg" : "SHA3-384",
+              "content" : "470c1b4962379b5b6494c75bd1475da3519bbe2543999c95f26b4021164d3d05419b0c3f704443162fe5433a204250e9"
+            },
+            {
+              "alg" : "SHA3-256",
+              "content" : "900e9c4edb18940ed3c4a4ba6946957fa613ef0d4b0c380551638f229206373c"
+            },
+            {
+              "alg" : "SHA3-512",
+              "content" : "5e36433e18ae24f7460902da27818874df5d1d73df1a97e49e7369335f7cc61ca595466a2d37789fba7eaa7f7f251b29216c3d7a78910b2ec38e2ed68ea84876"
+            }
+          ]
+        }
+      ]
+    },
+    "component" : {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.github.dhionson2/code-integrity-guard-testkit@1.0.0?type=jar",
+      "group" : "io.github.dhionson2",
+      "name" : "code-integrity-guard-testkit",
+      "version" : "1.0.0",
+      "description" : "JUnit evidence extension and Spring MVC authorization scenario helpers for Code Integrity Guard.",
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.github.dhionson2/code-integrity-guard-testkit@1.0.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/dhionson2/code-integrity-guard"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/dhionson2/code-integrity-guard"
+        }
+      ]
+    },
+    "properties" : [
+      {
+        "name" : "maven.goal",
+        "value" : "makeBom"
+      },
+      {
+        "name" : "maven.scopes",
+        "value" : "compile,provided,runtime,system,test"
+      }
+    ]
+  },
+  "components" : [
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.github.dhionson2/code-integrity-guard-core@1.0.0?type=jar",
+      "group" : "io.github.dhionson2",
+      "name" : "code-integrity-guard-core",
+      "version" : "1.0.0",
+      "description" : "Framework-independent contracts and evidence evaluation for Code Integrity Guard.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "555a90a3ff8687d2717806f4b6c5113a"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "e7aabe25f6a44bb6d9948948e4dcf5e15b763e42"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "a3f499e1e20a9907ea14ef6dad0776041a2529a9f0620f0ab40c40640ff9a990"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "719499b9fad4f9078019f40e0c0671bc3bab9c683ce6c8fa6135c272dd00618938aa3dcac40f21f2fb415a03b6d83054f7528c80271ef98e41cb5b5b45badf87"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "ba113b27f80465c29d2ea6a832f2daaa9abb99e68e584bdb1cf0f37bc331e49fb02500836feb352bbb014c01d780a968"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "7ad348216495c445123f99ac0292f880c1a46cf1aadf696f2473a896e9764acb3a0c6eab62b5bdd48d4e77bd44397e83"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "9409cafffac97e4fb02bc396a1c9a90e4866c424af3b297439696771061de389"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "aaaecafebe23d996ecf3e2e9494a127bcc61118e8401e43ca61bcec17dc2b99980bc91a87fd3fe87f2d5dde49c8617a1a2f81caa5406ce126d2e357dd83048b6"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.github.dhionson2/code-integrity-guard-core@1.0.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/dhionson2/code-integrity-guard"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/dhionson2/code-integrity-guard"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.14.3?type=jar",
+      "group" : "org.junit.jupiter",
+      "name" : "junit-jupiter-api",
+      "version" : "5.14.3",
+      "description" : "Module \"junit-jupiter-api\" of JUnit 5.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "87d225ef16154a78250eee603cab699e"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "ae3af0dc327be8ec5cb9ff1347edb61673fdcd47"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "a884b46d3cb9daf7adc775538cf2504ff2dcae76d7b9e9a28f9366d15ac2fbed"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "5ada794d305920ceecc00ccd02c48f54bf3d4b36002810f543a2215eff5034519ba939c2451f42828ea4d0a19712cf1e9ec23dd0e91a6fe568bbd7ee023253d8"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "57785f6ea6b46e5641db588971a81b2ff10334fc0f77e66217cd9192a427760972872c89068ef8045bc5e91930b2d764"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "d553c38b35522c30e0a0d33cb02540fdf92d873fa8d36f59d02fafed81ac040d7eac960a942e13e28209add26c4558d9"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "2825f95c9a1d0030c8658925b61bc7cabf048fac683a5410e1535e2aaf7e7f48"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "72c4339aa65aa10a20b1a549ecdd284bd5edf082a1f8bde46e83d7013e54bbf2f091fa00425a78ec2fc5750b5d42fd3bc35e72e9212e5c2088b4ebbb5f72d197"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.14.3?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://junit.org/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/junit-team/junit-framework"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.opentest4j/opentest4j@1.3.0?type=jar",
+      "group" : "org.opentest4j",
+      "name" : "opentest4j",
+      "version" : "1.3.0",
+      "description" : "Open Test Alliance for the JVM",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "03c404f727531f3fd3b4c73997899327"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "48e2df636cab6563ced64dcdff8abb2355627cb236ef0bf37598682ddf742f1b"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "78fc698a7871bb50305e3657893c10500595f043348d875f57bc39ca4a6a51eda3967b7c8c8a7ec3e8f85f2171bca4aa98823e912e416e87e81c6ba5b70a37c3"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "10398b6998c9202a0731e2e19ae1c3f9d8a83582c2663fe7bdda15794ee6fa816727dbd8f7c7164bd5395ee1cfe7c97e"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "3abe706fd78509c25a402c7bbf6f9ddf71ffb5b35054864ba0fdf7902207115f888a0ba728fd71d2e87a9360d2498121"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "d961907a1bfa1dcda329dca494ffbc251b31fabcaca5ab7095661a8ce3c1d654"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "0ad661617bcac51bcd26f7ad4611c69b1fd9811b50dbf734e041a3243ab1f845e7796620e8a7c40c4a2df3946864598b1251396c7d9bd813203d82710788cce0"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.opentest4j/opentest4j@1.3.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/ota4j-team/opentest4j"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/ota4j-team/opentest4j"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.junit.platform/junit-platform-commons@1.14.3?type=jar",
+      "group" : "org.junit.platform",
+      "name" : "junit-platform-commons",
+      "version" : "1.14.3",
+      "description" : "Module \"junit-platform-commons\" of JUnit 5.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "46a1aba671336550ad04d99c431d9cdd"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "3fe542777a97a239cb492e4be99057e2855d18f9"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "9eb52432baefc7de97dbddf51939456b9c272c6bdcb8fb535e0405c670f96ae8"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "dd9fea9acbd864594c9f750822dcb17d43f6ad37b68bb4a8729f1813d612c177f27efc6b25d983e5195be8aad3482052685b2b9698205730cff35b585114343a"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "e31dba5271c5ce5fa9ab05c4603fbf97128a61c92575eb9518cb6b07d0d6988bca76995e75c60ceca56a79c2c870288c"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "5e6192b8b473f60ea94a3628c0816547ff770175ba7a5f42a5202784849b7ca599a65b1c7eab622c14008b6ecac79f70"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "74ad8fef34ba08c4bc8d68353bd8c378c2c4da7fe53f006db85cc732e0bdc9cc"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "f0fd7e8df5af4615075f7f8f36c99722c3866b16707f539ebfdbdd871dd9aee5a9217f4e9deaa7272aab3927529f164e1f514b6ece17c1aba054c12c0295f913"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.junit.platform/junit-platform-commons@1.14.3?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://junit.org/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/junit-team/junit-framework"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+      "group" : "org.apiguardian",
+      "name" : "apiguardian-api",
+      "version" : "1.1.2",
+      "description" : "@API Guardian",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "8c7de3f82037fa4a2e8be2a2f13092af"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "a231e0d844d2721b0fa1b238006d15c6ded6842a"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "b509448ac506d607319f182537f0b35d71007582ec741832a1f111e5b5b70b38"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "d7ccd0e7019f1a997de39d66dc0ad4efe150428fdd7f4c743c93884f1602a3e90135ad34baea96d5b6d925ad6c0c8487c8e78304f0a089a12383d4a62e2c9a61"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "5ae11cfedcee7da43a506a67946ddc8a7a2622284a924ba78f74541e9a22db6868a15f5d84edb91a541e38afded734ea"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "c146116b3dfd969200b2ce52d96b92dd02d6f5a45a86e7e85edf35600ddbc2f3c6e8a1ad7e2db4dcd2c398c09fad0927"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "b4b436d7f615fc0b820204e69f83c517d1c1ccc5f6b99e459209ede4482268de"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "7b95b7ac68a6891b8901b5507acd2c24a0c1e20effa63cd513764f513eab4eb55f8de5178edbe0a400c11f3a18d3f56243569d6d663100f06dd98288504c09c5"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/apiguardian-team/apiguardian"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/apiguardian-team/apiguardian"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.springframework/spring-test@6.2.15?type=jar",
+      "publisher" : "Spring IO",
+      "group" : "org.springframework",
+      "name" : "spring-test",
+      "version" : "6.2.15",
+      "description" : "Spring TestContext Framework",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "c897b048246e9627fa1048a79333e4e4"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "fe1432f93417bf60e3755c697cb2ab636907d78a"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "d64d4bd6f5190195a243634ce29e1d2bb7896bbe469288a5cf2e4246aafbe853"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "d0837c7dfc8ca385700cd9fe91b4a78ed8128ddb7372392085fe0fb2ccec0c3a52b0ce5b5b880ff3a9af2e61dbbbeb753fbe34377b7762f1e3eb2e4eb75df620"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "2abbed32fc254bdb03eafc7035f2f72cf30979677640bbb28a5a91ddca5adf8aeb25b47739a61f2db29d89d298080498"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "1cb4b90f3b22b666708d032ea673812acdd4e340174768ed495edcb3d1e0a4b9344a24fe623cce4b94e59d70c153e4fb"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "d6057384ceaf53a4e0478c295d94980be9f73152cf8a0c4b608ea835d035abdf"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "6d5f9749105d8cd9df41be29804deddf966faf8e855fe12461bcc7500cc431fd9040729b45ef5b6213923702f22acf3fbb6bdac9f4fdf33094c72bff45e9ae30"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.springframework/spring-test@6.2.15?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/spring-projects/spring-framework"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/spring-projects/spring-framework/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/spring-projects/spring-framework"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.springframework/spring-core@6.2.15?type=jar",
+      "publisher" : "Spring IO",
+      "group" : "org.springframework",
+      "name" : "spring-core",
+      "version" : "6.2.15",
+      "description" : "Spring Core",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "421274822a93c26847d04406d1567602"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "f4744d35266cf76d71e284308f194fb513364ca2"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "efebed60992aef00bfb88871e8ea590428425aa42d4cdbedcb88ca3e47cf05b0"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "0373214e5d6bc78de7998b5ea6b7ad9f662faa054ccc0c4812cd674a1b74b688f1da8a489c15a7fb3f31e742aae53eeddfe15508892e5677fd8583d8f26c4eff"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "78b55748048d11255b5c4d1ef6d7c74b386699a77a7f84b11de5d1b05f38e37965afbd231685fa8b96b5d4b0b7992465"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "4a0fe1e9efac47cd33302da15ddc2b3cda62de5b4a3e25c11db562f52f5a70c27ad7bf065df7d85d1861a361fa4afa57"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "97cc298f662116e1fed9fa82f76b5c66bc772a06caf5009eb98936a4cd8f6fb7"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "2e5ed3889ffeb40713afd56a514729dbde8d5ce0c42b1931496194aae49001f3bd80aae46b3fe48fe0ff959ac284ebf3c33d18763aca943c358eee27a3711365"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.springframework/spring-core@6.2.15?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/spring-projects/spring-framework"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/spring-projects/spring-framework/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/spring-projects/spring-framework"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.springframework/spring-jcl@6.2.15?type=jar",
+      "publisher" : "Spring IO",
+      "group" : "org.springframework",
+      "name" : "spring-jcl",
+      "version" : "6.2.15",
+      "description" : "Spring Commons Logging Bridge",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "9196c289dd137aa72608d63ec4132ff6"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "4e8c809606ff25d22521e3f5be6b059b7fa10c91"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "1c32d68deec4c06957e3311d32ff0590ae03844b49e5c2e1da15424841165bcb"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "c7637c64da9160bd5b6d46ae920dd76d5aefc7707279f7e77e2dabbcc5a354356dd32db8d2abf3604f38b64bab77d0ad980f15c820cef205f8e6dd9dd1831492"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "1738be4ed3683884c74e5588e5acf6d11ee3fee0ec6f7b20d6b3ea4f9585d83c94e0ccd5d0e834a60697325be08ec4bf"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "4fa8d462b800f2f397f57381c5afea4806ba61951d27a55bd533e5e1658f91b21535460e0ccbbaa26c2764fab7898762"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "ea8731020047880814932d0a76ca4c2b0a968f4374476db77ceb92c88d38a1df"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "82f4ba663d4f7ec89c123bab724dc9b08dcb2f70a58512cc5cb43e9c23b73e87999c9bcb5f40a1f374a1b6b75470228bd0454fdff8e6d054faae868154be73c8"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.springframework/spring-jcl@6.2.15?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/spring-projects/spring-framework"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/spring-projects/spring-framework/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/spring-projects/spring-framework"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.springframework.security/spring-security-core@6.4.13?type=jar",
+      "publisher" : "Pivotal Software, Inc.",
+      "group" : "org.springframework.security",
+      "name" : "spring-security-core",
+      "version" : "6.4.13",
+      "description" : "Spring Security",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "1ab4166d059889f10fd7a69f73e60e8e"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "f4f369a7d91be27ddcadd77d855b9946dae02afd"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "eb523af374d91f10fb85ab8a9e918d82cec93bd8dc9741caebee99662f513bb7"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "893a1a3f47d9f60aa173b3f2d0f4944ce66d2c0b77bc7ecc9fcd07b49b8094e68223a95090e99c88ee831fd69f391f2a02226853a0f55a3f7818c89c25281a5e"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "b3787a30277eea4dcdfd91476d2bdf3c3304426989ec54c32786459a5186b35bec95af07d7e7b478598eb22fe9b28c4e"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "0af9ec8f54877b7d97ed00aaa514e51d9c5f0731b9d3e06e7e2c3c321616b573fce547ee6918d0f03b24118aefdba1d7"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "c2112e2ee0c109e0bb8e94a48fbfb28bd53e31c1d30c8dcc7a4157e9feb02f16"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "060098c02ee658bb53400a8b7dafb285ff3e2869ac0b5c19c144547db223672a06ec71a3d25142c296e5544a55bd2f96bf47efc11e480adf05af388844cd5bce"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.springframework.security/spring-security-core@6.4.13?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://spring.io/projects/spring-security"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/spring-projects/spring-security/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/spring-projects/spring-security"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.springframework.security/spring-security-crypto@6.4.13?type=jar",
+      "publisher" : "Pivotal Software, Inc.",
+      "group" : "org.springframework.security",
+      "name" : "spring-security-crypto",
+      "version" : "6.4.13",
+      "description" : "Spring Security",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "4eb7f8c37c5ce83fcdf23363a3cb1387"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "15a2d0a556e455f456a46e577649a7b802b545eb"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "5c32f67347b65704dd13b1b2cbefb4e7b562386c06be6672ae894779b4f98117"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "089e3fff74e9f0b665f534ccf1baee55bfebb86b1d3ba1df39b0b58ad68e999564b21bad38a01b3c9fae6a750b55aa8aa1123e7cf43d5d089200a918f0334a18"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "8b12a7ee1d987b99441bc37d9cb5c03d57bcf14f5c1bbbcd45328934c9f41cf8a8826d3e542757c77398c04c6db00a42"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "97b176b69eafc8c0600ec8132a0f0f131b61326b3c50c915cf43c6ccc8c0c9e70f0aaa5e92e2337665d349cd5f9876d2"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "7e9ce9b6247cd7d8c47770033ee26c2eb3fbac714a52fee17ca7f339b30f19f9"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "8d4754e3477c4f24c07fdc2e65b6d405ddf5409e793b377bc11bf51a99b6f6efed7d7b41c3691adbf5342a7ee0d625e063d792ccbc0eaac207da095079b20190"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.springframework.security/spring-security-crypto@6.4.13?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://spring.io/projects/spring-security"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/spring-projects/spring-security/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/spring-projects/spring-security"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.springframework/spring-aop@6.2.15?type=jar",
+      "publisher" : "Spring IO",
+      "group" : "org.springframework",
+      "name" : "spring-aop",
+      "version" : "6.2.15",
+      "description" : "Spring AOP",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "519ad924059838311eb1ebe437878b6e"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "921099294cbe4b7ceb278644a530f14ecd1df580"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "0982d7742e70752eae1e96d10047c53d0c48d41fb819d076432d2154ceeacc90"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "27e8ee9ca734c684f32b92fef67f871a3d9f60f4244294d90c0c46b9cae68c2b4ea76afe68951830532eda5ab460af58be0e1a1d95df80bdb543d143cdedbae5"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "a3c82e3c7e982df004a008734382e292b567a15d88db57fd34903861f698ac82e74231cf3948dd02eea12cc5f670ae3c"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "9d1191e85da99851c59b2ce057a14e0ffcb00f3efaeb84ae57477880640650b0083b284f9ebe84edde2d6c0e7c60d9d9"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "c178a183676da70e9593531124b175f42c9d245c50f8f531ceed39ab2c1a2749"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "dfbfd35252499cce244661023edbca8c858362b374e0d7113ab97db4ffcf69a767cabdaf72a636b25cd919009ba2d365410066c0cc12c93ac502b0748cda47a2"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.springframework/spring-aop@6.2.15?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/spring-projects/spring-framework"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/spring-projects/spring-framework/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/spring-projects/spring-framework"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.springframework/spring-beans@6.2.15?type=jar",
+      "publisher" : "Spring IO",
+      "group" : "org.springframework",
+      "name" : "spring-beans",
+      "version" : "6.2.15",
+      "description" : "Spring Beans",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "a8bddadc3bcd6db151275804e6c03af8"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "1d0ad7873e865fc9d47c3aac7b7ffb6d0d1500c5"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "ffba8542f6799b2afbdcbda715e185cb53bb1d497389ba2102f95088d1564c2c"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "a88feade9f1664e723b15fdf55e76e7e66e86033cd0c19d93727e79a831d9a87d5f70315073db40f8f4ad7900c0ae09068f29c10324d4092cf6e50f4d55577a2"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "088bf6922adc452e48e5e6e2fa6280efc162011b0784ee86c0e2de7277b63c7de3c861d0ae4fb43a7172873fbb1449e0"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "28d7db868ab55cbee1d59b7bd0469f6a26661994b30bda1560953280489068bc6215c5938964c9b153e58d7151c44a3e"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "a92608b94fd9cee2ae592a06e8e281293e189ac38c40672c592659ebd97d87a9"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "b5ee90a936ed38d5eb4635035e5dbad343cec11aa68ab3ea7991413f2a5bd17dc1552e456958529fc67b89d00ae984a3cd3beab3dd3f415736f42eda05b5ef8f"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.springframework/spring-beans@6.2.15?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/spring-projects/spring-framework"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/spring-projects/spring-framework/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/spring-projects/spring-framework"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.springframework/spring-context@6.2.15?type=jar",
+      "publisher" : "Spring IO",
+      "group" : "org.springframework",
+      "name" : "spring-context",
+      "version" : "6.2.15",
+      "description" : "Spring Context",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "6e3ffa315eab7dffc475a3d60131cfaf"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "a721a75d6be895a4ffa1e6b0dc6a77d78ee7ca0d"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "1157a1ce6810c4ac32b5f07b35c169c57e2489a06b4ed0a6bb5a564546f9d528"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "f9efe217b862143cdb6fb40734a86a52adacb384b732347161a234e82af1c6df2a91455a4a90edfd9ec7fa66719de76c3e68d32d0335662eb378f205cd3a9a06"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "559b32a39aceb9be399b44996d9f3df09da5189510776b5d0f7f515a185a04a8dd03f0eb5dda90904d068b688c648dbe"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "16e39cffa068eb2d099a2b8c6ad0673dd7a68a59fd158179f7b11ff2f6a98621ea0d58f4ce9808e02779a8893d831bb5"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "a6ac9a54dc63e74a1ee0b8f34f3afb5a8687a28b371aaa596534544a540aabbf"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "f28b6a4d6deb3ce801ea21f89f5f39e70f36a30ebb64241a3591512941dac561ae0b1e4ef3858cd43b0d2fd126e9a9696910c969f94ac8236b0ccc9d09ac2d7e"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.springframework/spring-context@6.2.15?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/spring-projects/spring-framework"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/spring-projects/spring-framework/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/spring-projects/spring-framework"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.springframework/spring-expression@6.2.15?type=jar",
+      "publisher" : "Spring IO",
+      "group" : "org.springframework",
+      "name" : "spring-expression",
+      "version" : "6.2.15",
+      "description" : "Spring Expression Language (SpEL)",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "377e75b89c95b972437faa073e4670c3"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "09f2d3bb55e9fe32576463daed7d245685420d04"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "25d5f262fca2b8b30568e0c05390d804b77a9cb77d75df71e57d111572ee7da1"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "c7f97e4610362c85e370298e6feb9eb02c7ddcb3a04cb4445cb5b4f460b68a084eaf4f0d38e16973474c2a9a15f6002b1a61170845803bea99a799d0b58d9257"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "8455f1c20d7643665ea60fab5f40c78a7b92073a01c752c6d44c3d39c647948961017aa1699820e4d885a7b15b209fbd"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "8bfa179706345e0aa5b4c799a0bec91320a0ff25a870ed46550281747efd3342c56200009db2ab8c0f6e77c2c8742b72"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "e404eab0eb9a7b4427cb61635d21db484f26dd3721ea03a16908ecb5f8621e28"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "c6e4d88746415d0cc2e831574bcd9d9973fde047b3d3c356dc57703292ab1b23c90238d05e507a5d5875bd9038644338e576bf949373d0d81476f7255893ef5b"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.springframework/spring-expression@6.2.15?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/spring-projects/spring-framework"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/spring-projects/spring-framework/issues"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/spring-projects/spring-framework"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.micrometer/micrometer-observation@1.14.14?type=jar",
+      "group" : "io.micrometer",
+      "name" : "micrometer-observation",
+      "version" : "1.14.14",
+      "description" : "Module containing Observation related code",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "73cba12752d5ef01b970b9a55d44b0c2"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "97685eb32ca64551cce5ab4489a61cb22cb00530"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "3668626463091489e1961e9e42b10ccd8cd54d1a4509543575234b2ebd0881cf"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "7e6100a65a60ddddcec0b8507e9e9db8445d03e789f8107a3ec899ec90a6867eff13a14aad727bfe8a8afe02c72826417de77a0c503a11432bc8595811d7c8d3"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "2ad651a3acd3880024f2124fbf14c46afb3ca812f26e2cff3891c452bbb04d0b9a96033ca0b2afd0579700d4716f56c9"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "70d178ba43fe08011175831c8a589972ab32ec995d89f04d73288551dc40a74980473458bb85c2f8bd60844d2a2327b0"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "6fcd219f6c43913018ec6a67763d9c9b31f2ed5b7a8e69525a2e67ac733e82b4"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "e7559650368d6b65f0622e2dbd8353cd054d97dccb2539d714a77bcca75ae00df3a2fb8f5223f9d96d4ac843ec4b67f75ebbecb47e2cb5eec4267266be90a804"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.micrometer/micrometer-observation@1.14.14?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/micrometer-metrics/micrometer"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/io.micrometer/micrometer-commons@1.14.14?type=jar",
+      "group" : "io.micrometer",
+      "name" : "micrometer-commons",
+      "version" : "1.14.14",
+      "description" : "Module containing common code",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "ec8cbe42e95facf35d38d9732db13883"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "36825a740b56307f2a069f7f794e6f33bb83baba"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "01a7a93945e194464c861a483853cecfc8fc70a27a97e7a786fa6a2dbb6e6359"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "5fbc81de09a5fbc6e3ec5203e65a6947317e9e0daacf5c5922f698d9c1f9baed7c94ea7faf2b49c6c178696081d8d7720d973114921ad69f6b856a3d8fdf4c95"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "f525f5040998a2e089aa6e9d8329f2fd1da15ef8c355aeed663b6d1385e2e54fa5e3f4f9568cd99ca96b9e71edca326b"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "d018d12b0f18724b57cc8ff996e7fa9cc3711f4af930c7691ea925a13d172411ba29c0564928195e82ee425b5c7135cc"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "ccb8df1ae84278728c30930ad12b4492707f71ac5546563a2be48c606065bd8d"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "48a8b0acb6b2d5455d5fe47182f74adaee8743bdce086af22d4f514add67990bb4dd35a9176517709bcc49a8ad53d6eafdbc25f99a5eedcb6abd3992775afc95"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/io.micrometer/micrometer-commons@1.14.14?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/micrometer-metrics/micrometer"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/jakarta.servlet/jakarta.servlet-api@6.0.0?type=jar",
+      "publisher" : "Eclipse Foundation",
+      "group" : "jakarta.servlet",
+      "name" : "jakarta.servlet-api",
+      "version" : "6.0.0",
+      "description" : "Eclipse Enterprise for Java (EE4J) is an open source initiative to create standard APIs, implementations of those APIs, and technology compatibility kits for Java runtimes that enable development, deployment, and management of server-side and cloud-native applications.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "4bcb3175ed9b7aa3f038d082879ec2a8"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "abecc699286e65035ebba9844c03931357a6a963"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "c034eb1afb158987dbb53a5fea0cadf611c8dae8daadd59c44d9d5ab70129cef"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "b810ce040ed0671a3161fb197845f3ae750cd38c474ef54c351b7b127ff3b4d624a26c33450c62474f42c1cde21c65324cda63b1b3ea0515a286e0bcb0c0c9d5"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "2f02e56f5b0a3a7191b6cea6e3b872d8d29503299751c6dabfdf4d61b1ae2b431be9c13801083cd6e516b8f52ab38a95"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "373855d3aef3be1d54046c33d76daa0a3db62b04e0bfa5957670f17ede4f74426b9d858159e67eb6abc723278f272c23"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "cb8c3221eb78148915a75489df9d25665cd41b8949ede82c5ee7a792b1b32fe0"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "689137c5de2c0972392e181a4f03e5a1b3f839238839a28442da9aa91f4e5c2980eb48a0107c0fbcd2d35a44ab8a4d698fa197e0dadf264f3e547043fc15dba3"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "EPL-2.0"
+          }
+        },
+        {
+          "license" : {
+            "id" : "GPL-2.0-with-classpath-exception"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/jakarta.servlet/jakarta.servlet-api@6.0.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://projects.eclipse.org/projects/ee4j.servlet"
+        },
+        {
+          "type" : "distribution-intake",
+          "url" : "https://jakarta.oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/eclipse-ee4j/servlet-api/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://dev.eclipse.org/mhonarc/lists/servlet-dev"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/eclipse-ee4j/servlet-api"
+        }
+      ]
+    },
+    {
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.hamcrest/hamcrest@2.2?type=jar",
+      "group" : "org.hamcrest",
+      "name" : "hamcrest",
+      "version" : "2.2",
+      "description" : "Core API and libraries of hamcrest matcher framework.",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "10b47e837f271d0662f28780e60388e8"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "1820c0968dba3a11a1b30669bb1f01978a91dedc"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "5e62846a89f05cd78cd9c1a553f340d002458380c320455dd1f8fc5497a8a1c1"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "6b1141329b83224f69f074cb913dbff6921d6b8693ede8d2599acb626481255dae63de42eb123cbd5f59a261ac32faae012be64e8e90406ae9215543fbca5546"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "89bdcfdb28da13eaa09a40f5e3fd5667c3cf789cf43e237b8581d1cd814fee392ada66a79cbe77295950e996f485f887"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "0d011b75ed22fe456ff683b420875636c4c05b3b837d8819f3f38fd33ec52b3ce2f854acfb7bebffc6659046af8fa204"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "92d05019d2aec2c45f0464df5bf29a2e41c1af1ee3de05ec9d8ca82e0ee4f0b0"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "4c5cbbe0dcaa9878e1dc6d3caa523c795a96280cb53843577164e5af458572cde0e82310cf5b52c1ea370c434d5631f02e06980d63126843d9b16e357a5f7483"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "BSD-3-Clause",
+            "url" : "https://opensource.org/licenses/BSD-3-Clause"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.hamcrest/hamcrest@2.2?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "http://hamcrest.org/JavaHamcrest/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/hamcrest/JavaHamcrest"
+        }
+      ]
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/io.github.dhionson2/code-integrity-guard-testkit@1.0.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.github.dhionson2/code-integrity-guard-core@1.0.0?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.14.3?type=jar",
+        "pkg:maven/org.springframework/spring-test@6.2.15?type=jar",
+        "pkg:maven/org.springframework.security/spring-security-core@6.4.13?type=jar",
+        "pkg:maven/jakarta.servlet/jakarta.servlet-api@6.0.0?type=jar",
+        "pkg:maven/org.hamcrest/hamcrest@2.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.github.dhionson2/code-integrity-guard-core@1.0.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.14.3?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.opentest4j/opentest4j@1.3.0?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-commons@1.14.3?type=jar",
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.opentest4j/opentest4j@1.3.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.junit.platform/junit-platform-commons@1.14.3?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.springframework/spring-test@6.2.15?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.springframework/spring-core@6.2.15?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.springframework/spring-core@6.2.15?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.springframework/spring-jcl@6.2.15?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.springframework/spring-jcl@6.2.15?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.springframework.security/spring-security-core@6.4.13?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.springframework.security/spring-security-crypto@6.4.13?type=jar",
+        "pkg:maven/org.springframework/spring-aop@6.2.15?type=jar",
+        "pkg:maven/org.springframework/spring-beans@6.2.15?type=jar",
+        "pkg:maven/org.springframework/spring-context@6.2.15?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.2.15?type=jar",
+        "pkg:maven/org.springframework/spring-expression@6.2.15?type=jar",
+        "pkg:maven/io.micrometer/micrometer-observation@1.14.14?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.springframework.security/spring-security-crypto@6.4.13?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.springframework/spring-aop@6.2.15?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.springframework/spring-beans@6.2.15?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.2.15?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.springframework/spring-beans@6.2.15?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.springframework/spring-core@6.2.15?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.springframework/spring-context@6.2.15?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.springframework/spring-aop@6.2.15?type=jar",
+        "pkg:maven/org.springframework/spring-beans@6.2.15?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.2.15?type=jar",
+        "pkg:maven/org.springframework/spring-expression@6.2.15?type=jar",
+        "pkg:maven/io.micrometer/micrometer-observation@1.14.14?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.springframework/spring-expression@6.2.15?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.springframework/spring-core@6.2.15?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.micrometer/micrometer-observation@1.14.14?type=jar",
+      "dependsOn" : [
+        "pkg:maven/io.micrometer/micrometer-commons@1.14.14?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/io.micrometer/micrometer-commons@1.14.14?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/jakarta.servlet/jakarta.servlet-api@6.0.0?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.hamcrest/hamcrest@2.2?type=jar",
+      "dependsOn" : [ ]
+    }
+  ]
+}

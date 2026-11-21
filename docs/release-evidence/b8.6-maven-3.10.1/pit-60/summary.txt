@@ -1,0 +1,2 @@
+Command: .\mvnw.cmd -B -ntp -f examples\spring-boot-authorization\pom.xml clean verify -Ppit-validation '-Dcig.minimumMutationPercent=60'
+Result: BUILD SUCCESS; PIT AVAILABLE; 7/11 = 63.636%; partialCoverage=true; contract CUSTOMER-OWNER-ISOLATION VERIFIED.

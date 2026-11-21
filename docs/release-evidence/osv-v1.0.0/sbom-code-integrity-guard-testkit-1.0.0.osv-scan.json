@@ -1,0 +1,2350 @@
+{
+  "scanner": "OSV-Scanner",
+  "scannerVersion": "2.7.1",
+  "scalibrVersion": "0.5.3",
+  "sourceSbom": "docs/release-evidence/sbom-v1.0.0/sbom-code-integrity-guard-testkit-1.0.0.json",
+  "sbomSha256": "E75065FB8CF6C81208A9613A7FED3E495CE74A5EDBB0CA91DB685BCC38312171",
+  "scannerInput": "target/osv-scanner-v2.7.1/sboms/sbom-code-integrity-guard-testkit-1.0.0.cdx.json",
+  "command": [
+    "osv-scanner",
+    "scan",
+    "source",
+    "--lockfile",
+    "D:\\dev\\code-integrity-guard\\target\\osv-scanner-v2.7.1\\sboms\\sbom-code-integrity-guard-testkit-1.0.0.cdx.json",
+    "--format",
+    "json",
+    "--all-packages",
+    "--all-vulns",
+    "--output-file",
+    "D:\\dev\\code-integrity-guard\\target\\osv-scanner-v2.7.1\\sboms\\sbom-code-integrity-guard-testkit-1.0.0.full.json"
+  ],
+  "exitCode": 1,
+  "status": "completed",
+  "stdout": null,
+  "stderr": "Starting filesystem walk for root: D:\\\r\nScanned D:\\dev\\code-integrity-guard\\target\\osv-scanner-v2.7.1\\sboms\\sbom-code-integrity-guard-testkit-1.0.0.cdx.json file and found 18 packages\r\nEnd status: 0 dirs visited, 1 inodes visited, 1 Extract calls, 2.8759ms elapsed, 2.8759ms wall time\r\n",
+  "jsonParseError": null,
+  "result": {
+    "results": [
+      {
+        "source": {
+          "path": "D:/dev/code-integrity-guard/target/osv-scanner-v2.7.1/sboms/sbom-code-integrity-guard-testkit-1.0.0.cdx.json",
+          "type": "sbom"
+        },
+        "packages": [
+          {
+            "package": {
+              "name": "org.apiguardian:apiguardian-api",
+              "version": "1.1.2",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "io.github.dhionson2:code-integrity-guard-core",
+              "version": "1.0.0",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/io.github.dhionson2/code-integrity-guard-core@1.0.0?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "org.hamcrest:hamcrest",
+              "version": "2.2",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.hamcrest/hamcrest@2.2?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "jakarta.servlet:jakarta.servlet-api",
+              "version": "6.0.0",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/jakarta.servlet/jakarta.servlet-api@6.0.0?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "org.junit.jupiter:junit-jupiter-api",
+              "version": "5.14.3",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.14.3?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "org.junit.platform:junit-platform-commons",
+              "version": "1.14.3",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.junit.platform/junit-platform-commons@1.14.3?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "io.micrometer:micrometer-commons",
+              "version": "1.14.14",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/io.micrometer/micrometer-commons@1.14.14?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "io.micrometer:micrometer-observation",
+              "version": "1.14.14",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/io.micrometer/micrometer-observation@1.14.14?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "org.opentest4j:opentest4j",
+              "version": "1.3.0",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.opentest4j/opentest4j@1.3.0?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "org.springframework:spring-aop",
+              "version": "6.2.15",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.springframework/spring-aop@6.2.15?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "org.springframework:spring-beans",
+              "version": "6.2.15",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.springframework/spring-beans@6.2.15?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "org.springframework:spring-context",
+              "version": "6.2.15",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.springframework/spring-context@6.2.15?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "org.springframework:spring-core",
+              "version": "6.2.15",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.springframework/spring-core@6.2.15?type=jar"
+            },
+            "groups": [
+              {
+                "ids": [
+                  "GHSA-659m-px2c-25wj"
+                ],
+                "aliases": [
+                  "CVE-2026-41848",
+                  "GHSA-659m-px2c-25wj"
+                ],
+                "max_severity": "3.7"
+              }
+            ],
+            "vulnerabilities": [
+              {
+                "affected": [
+                  {
+                    "database_specific": {
+                      "last_known_affected_version_range": "<= 7.0.7",
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/06/GHSA-659m-px2c-25wj/GHSA-659m-px2c-25wj.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework:spring-core",
+                      "purl": "pkg:maven/org.springframework/spring-core"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "7.0.0"
+                          },
+                          {
+                            "fixed": "7.0.8"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "7.0.0",
+                      "7.0.1",
+                      "7.0.2",
+                      "7.0.3",
+                      "7.0.4",
+                      "7.0.5",
+                      "7.0.6",
+                      "7.0.7"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "last_known_affected_version_range": "<= 6.2.18",
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/06/GHSA-659m-px2c-25wj/GHSA-659m-px2c-25wj.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework:spring-core",
+                      "purl": "pkg:maven/org.springframework/spring-core"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "6.2.0"
+                          },
+                          {
+                            "fixed": "6.2.19"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "6.2.0",
+                      "6.2.1",
+                      "6.2.10",
+                      "6.2.11",
+                      "6.2.12",
+                      "6.2.13",
+                      "6.2.14",
+                      "6.2.15",
+                      "6.2.16",
+                      "6.2.17",
+                      "6.2.18",
+                      "6.2.2",
+                      "6.2.3",
+                      "6.2.4",
+                      "6.2.5",
+                      "6.2.6",
+                      "6.2.7",
+                      "6.2.8",
+                      "6.2.9"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/06/GHSA-659m-px2c-25wj/GHSA-659m-px2c-25wj.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework:spring-core",
+                      "purl": "pkg:maven/org.springframework/spring-core"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "6.1.0"
+                          },
+                          {
+                            "last_affected": "6.1.21"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "6.1.0",
+                      "6.1.1",
+                      "6.1.10",
+                      "6.1.11",
+                      "6.1.12",
+                      "6.1.13",
+                      "6.1.14",
+                      "6.1.15",
+                      "6.1.16",
+                      "6.1.17",
+                      "6.1.18",
+                      "6.1.19",
+                      "6.1.2",
+                      "6.1.20",
+                      "6.1.21",
+                      "6.1.3",
+                      "6.1.4",
+                      "6.1.5",
+                      "6.1.6",
+                      "6.1.7",
+                      "6.1.8",
+                      "6.1.9"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/06/GHSA-659m-px2c-25wj/GHSA-659m-px2c-25wj.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework:spring-core",
+                      "purl": "pkg:maven/org.springframework/spring-core"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "0"
+                          },
+                          {
+                            "last_affected": "5.3.39"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "1.0",
+                      "1.0-rc1",
+                      "1.0.1",
+                      "1.1",
+                      "1.1-rc1",
+                      "1.1-rc2",
+                      "1.1.1",
+                      "1.1.2",
+                      "1.1.3",
+                      "1.1.4",
+                      "1.1.5",
+                      "1.2",
+                      "1.2-rc1",
+                      "1.2-rc2",
+                      "1.2.1",
+                      "1.2.2",
+                      "1.2.3",
+                      "1.2.4",
+                      "1.2.5",
+                      "1.2.6",
+                      "1.2.7",
+                      "1.2.8",
+                      "1.2.9",
+                      "2.0",
+                      "2.0-m1",
+                      "2.0-m2",
+                      "2.0-m3",
+                      "2.0-m4",
+                      "2.0-m5",
+                      "2.0-rc1",
+                      "2.0-rc2",
+                      "2.0.1",
+                      "2.0.2",
+                      "2.0.3",
+                      "2.0.4",
+                      "2.0.5",
+                      "2.0.6",
+                      "2.0.7",
+                      "2.0.8",
+                      "2.5",
+                      "2.5.1",
+                      "2.5.2",
+                      "2.5.3",
+                      "2.5.4",
+                      "2.5.5",
+                      "2.5.6",
+                      "2.5.6.SEC01",
+                      "2.5.6.SEC02",
+                      "2.5.6.SEC03",
+                      "3.0.0.RELEASE",
+                      "3.0.1.RELEASE",
+                      "3.0.2.RELEASE",
+                      "3.0.3.RELEASE",
+                      "3.0.4.RELEASE",
+                      "3.0.5.RELEASE",
+                      "3.0.6.RELEASE",
+                      "3.0.7.RELEASE",
+                      "3.1.0.RELEASE",
+                      "3.1.1.RELEASE",
+                      "3.1.2.RELEASE",
+                      "3.1.3.RELEASE",
+                      "3.1.4.RELEASE",
+                      "3.2.0.RELEASE",
+                      "3.2.1.RELEASE",
+                      "3.2.10.RELEASE",
+                      "3.2.11.RELEASE",
+                      "3.2.12.RELEASE",
+                      "3.2.13.RELEASE",
+                      "3.2.14.RELEASE",
+                      "3.2.15.RELEASE",
+                      "3.2.16.RELEASE",
+                      "3.2.17.RELEASE",
+                      "3.2.18.RELEASE",
+                      "3.2.2.RELEASE",
+                      "3.2.3.RELEASE",
+                      "3.2.4.RELEASE",
+                      "3.2.5.RELEASE",
+                      "3.2.6.RELEASE",
+                      "3.2.7.RELEASE",
+                      "3.2.8.RELEASE",
+                      "3.2.9.RELEASE",
+                      "4.0.0.RELEASE",
+                      "4.0.1.RELEASE",
+                      "4.0.2.RELEASE",
+                      "4.0.3.RELEASE",
+                      "4.0.4.RELEASE",
+                      "4.0.5.RELEASE",
+                      "4.0.6.RELEASE",
+                      "4.0.7.RELEASE",
+                      "4.0.8.RELEASE",
+                      "4.0.9.RELEASE",
+                      "4.1.0.RELEASE",
+                      "4.1.1.RELEASE",
+                      "4.1.2.RELEASE",
+                      "4.1.3.RELEASE",
+                      "4.1.4.RELEASE",
+                      "4.1.5.RELEASE",
+                      "4.1.6.RELEASE",
+                      "4.1.7.RELEASE",
+                      "4.1.8.RELEASE",
+                      "4.1.9.RELEASE",
+                      "4.2.0.RELEASE",
+                      "4.2.1.RELEASE",
+                      "4.2.2.RELEASE",
+                      "4.2.3.RELEASE",
+                      "4.2.4.RELEASE",
+                      "4.2.5.RELEASE",
+                      "4.2.6.RELEASE",
+                      "4.2.7.RELEASE",
+                      "4.2.8.RELEASE",
+                      "4.2.9.RELEASE",
+                      "4.3.0.RELEASE",
+                      "4.3.1.RELEASE",
+                      "4.3.10.RELEASE",
+                      "4.3.11.RELEASE",
+                      "4.3.12.RELEASE",
+                      "4.3.13.RELEASE",
+                      "4.3.14.RELEASE",
+                      "4.3.15.RELEASE",
+                      "4.3.16.RELEASE",
+                      "4.3.17.RELEASE",
+                      "4.3.18.RELEASE",
+                      "4.3.19.RELEASE",
+                      "4.3.2.RELEASE",
+                      "4.3.20.RELEASE",
+                      "4.3.21.RELEASE",
+                      "4.3.22.RELEASE",
+                      "4.3.23.RELEASE",
+                      "4.3.24.RELEASE",
+                      "4.3.25.RELEASE",
+                      "4.3.26.RELEASE",
+                      "4.3.27.RELEASE",
+                      "4.3.28.RELEASE",
+                      "4.3.29.RELEASE",
+                      "4.3.3.RELEASE",
+                      "4.3.30.RELEASE",
+                      "4.3.4.RELEASE",
+                      "4.3.5.RELEASE",
+                      "4.3.6.RELEASE",
+                      "4.3.7.RELEASE",
+                      "4.3.8.RELEASE",
+                      "4.3.9.RELEASE",
+                      "5.0.0.RELEASE",
+                      "5.0.1.RELEASE",
+                      "5.0.10.RELEASE",
+                      "5.0.11.RELEASE",
+                      "5.0.12.RELEASE",
+                      "5.0.13.RELEASE",
+                      "5.0.14.RELEASE",
+                      "5.0.15.RELEASE",
+                      "5.0.16.RELEASE",
+                      "5.0.17.RELEASE",
+                      "5.0.18.RELEASE",
+                      "5.0.19.RELEASE",
+                      "5.0.2.RELEASE",
+                      "5.0.20.RELEASE",
+                      "5.0.3.RELEASE",
+                      "5.0.4.RELEASE",
+                      "5.0.5.RELEASE",
+                      "5.0.6.RELEASE",
+                      "5.0.7.RELEASE",
+                      "5.0.8.RELEASE",
+                      "5.0.9.RELEASE",
+                      "5.1.0.RELEASE",
+                      "5.1.1.RELEASE",
+                      "5.1.10.RELEASE",
+                      "5.1.11.RELEASE",
+                      "5.1.12.RELEASE",
+                      "5.1.13.RELEASE",
+                      "5.1.14.RELEASE",
+                      "5.1.15.RELEASE",
+                      "5.1.16.RELEASE",
+                      "5.1.17.RELEASE",
+                      "5.1.18.RELEASE",
+                      "5.1.19.RELEASE",
+                      "5.1.2.RELEASE",
+                      "5.1.20.RELEASE",
+                      "5.1.3.RELEASE",
+                      "5.1.4.RELEASE",
+                      "5.1.5.RELEASE",
+                      "5.1.6.RELEASE",
+                      "5.1.7.RELEASE",
+                      "5.1.8.RELEASE",
+                      "5.1.9.RELEASE",
+                      "5.2.0.RELEASE",
+                      "5.2.1.RELEASE",
+                      "5.2.10.RELEASE",
+                      "5.2.11.RELEASE",
+                      "5.2.12.RELEASE",
+                      "5.2.13.RELEASE",
+                      "5.2.14.RELEASE",
+                      "5.2.15.RELEASE",
+                      "5.2.16.RELEASE",
+                      "5.2.17.RELEASE",
+                      "5.2.18.RELEASE",
+                      "5.2.19.RELEASE",
+                      "5.2.2.RELEASE",
+                      "5.2.20.RELEASE",
+                      "5.2.21.RELEASE",
+                      "5.2.22.RELEASE",
+                      "5.2.23.RELEASE",
+                      "5.2.24.RELEASE",
+                      "5.2.25.RELEASE",
+                      "5.2.3.RELEASE",
+                      "5.2.4.RELEASE",
+                      "5.2.5.RELEASE",
+                      "5.2.6.RELEASE",
+                      "5.2.7.RELEASE",
+                      "5.2.8.RELEASE",
+                      "5.2.9.RELEASE",
+                      "5.3.0",
+                      "5.3.1",
+                      "5.3.10",
+                      "5.3.11",
+                      "5.3.12",
+                      "5.3.13",
+                      "5.3.14",
+                      "5.3.15",
+                      "5.3.16",
+                      "5.3.17",
+                      "5.3.18",
+                      "5.3.19",
+                      "5.3.2",
+                      "5.3.20",
+                      "5.3.21",
+                      "5.3.22",
+                      "5.3.23",
+                      "5.3.24",
+                      "5.3.25",
+                      "5.3.26",
+                      "5.3.27",
+                      "5.3.28",
+                      "5.3.29",
+                      "5.3.3",
+                      "5.3.30",
+                      "5.3.31",
+                      "5.3.32",
+                      "5.3.33",
+                      "5.3.34",
+                      "5.3.35",
+                      "5.3.36",
+                      "5.3.37",
+                      "5.3.38",
+                      "5.3.39",
+                      "5.3.4",
+                      "5.3.5",
+                      "5.3.6",
+                      "5.3.7",
+                      "5.3.8",
+                      "5.3.9"
+                    ]
+                  }
+                ],
+                "aliases": [
+                  "CVE-2026-41848"
+                ],
+                "database_specific": {
+                  "cwe_ids": [
+                    "CWE-1333"
+                  ],
+                  "github_reviewed": true,
+                  "github_reviewed_at": "2026-07-30T18:29:21Z",
+                  "nvd_published_at": "2026-06-09T05:16:36Z",
+                  "severity": "LOW"
+                },
+                "details": "Applications may be vulnerable to a Regular Expression Denial of Service (ReDoS) attack if an attacker is able to provide a pattern which is then directly or indirectly supplied to one of the following methods in AntPathMatcher: match(String pattern, String path), matchStart(String pattern, String path), extractUriTemplateVariables(String pattern, String path).\n\nAffected versions:\nSpring Framework 7.0.0 through 7.0.7; 6.2.0 through 6.2.18; 6.1.0 through 6.1.27; 5.3.0 through 5.3.48.",
+                "id": "GHSA-659m-px2c-25wj",
+                "modified": "2026-09-10T03:50:48.636887140Z",
+                "published": "2026-06-09T06:31:58Z",
+                "references": [
+                  {
+                    "type": "ADVISORY",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41848"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://github.com/spring-projects/spring-framework/commit/12b44f2545a1bec6150c7a05e66092c732597a94"
+                  },
+                  {
+                    "type": "PACKAGE",
+                    "url": "https://github.com/spring-projects/spring-framework"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://github.com/spring-projects/spring-framework/releases/tag/v6.2.19"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://github.com/spring-projects/spring-framework/releases/tag/v7.0.8"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://spring.io/security/cve-2026-41848"
+                  }
+                ],
+                "schema_version": "1.9.0",
+                "severity": [
+                  {
+                    "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                    "type": "CVSS_V3"
+                  }
+                ],
+                "summary": "Spring Framework Denial of Service via AntPathMatcher"
+              }
+            ]
+          },
+          {
+            "package": {
+              "name": "org.springframework:spring-expression",
+              "version": "6.2.15",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.springframework/spring-expression@6.2.15?type=jar"
+            },
+            "groups": [
+              {
+                "ids": [
+                  "GHSA-9f52-rjqv-25qv"
+                ],
+                "aliases": [
+                  "CVE-2026-41852",
+                  "GHSA-9f52-rjqv-25qv"
+                ],
+                "max_severity": "3.7"
+              },
+              {
+                "ids": [
+                  "GHSA-r5w3-xv2f-j59q"
+                ],
+                "aliases": [
+                  "CVE-2026-41850",
+                  "GHSA-r5w3-xv2f-j59q"
+                ],
+                "max_severity": "7.5"
+              },
+              {
+                "ids": [
+                  "GHSA-wxpp-56q6-5pcg"
+                ],
+                "aliases": [
+                  "CVE-2026-41851",
+                  "GHSA-wxpp-56q6-5pcg"
+                ],
+                "max_severity": "5.3"
+              }
+            ],
+            "vulnerabilities": [
+              {
+                "affected": [
+                  {
+                    "database_specific": {
+                      "last_known_affected_version_range": "<= 7.0.7",
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/06/GHSA-9f52-rjqv-25qv/GHSA-9f52-rjqv-25qv.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework:spring-expression",
+                      "purl": "pkg:maven/org.springframework/spring-expression"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "7.0.0"
+                          },
+                          {
+                            "fixed": "7.0.8"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "7.0.0",
+                      "7.0.1",
+                      "7.0.2",
+                      "7.0.3",
+                      "7.0.4",
+                      "7.0.5",
+                      "7.0.6",
+                      "7.0.7"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "last_known_affected_version_range": "<= 6.2.18",
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/06/GHSA-9f52-rjqv-25qv/GHSA-9f52-rjqv-25qv.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework:spring-expression",
+                      "purl": "pkg:maven/org.springframework/spring-expression"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "6.2.0"
+                          },
+                          {
+                            "fixed": "6.2.19"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "6.2.0",
+                      "6.2.1",
+                      "6.2.10",
+                      "6.2.11",
+                      "6.2.12",
+                      "6.2.13",
+                      "6.2.14",
+                      "6.2.15",
+                      "6.2.16",
+                      "6.2.17",
+                      "6.2.18",
+                      "6.2.2",
+                      "6.2.3",
+                      "6.2.4",
+                      "6.2.5",
+                      "6.2.6",
+                      "6.2.7",
+                      "6.2.8",
+                      "6.2.9"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/06/GHSA-9f52-rjqv-25qv/GHSA-9f52-rjqv-25qv.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework:spring-expression",
+                      "purl": "pkg:maven/org.springframework/spring-expression"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "6.1.0"
+                          },
+                          {
+                            "last_affected": "6.1.21"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "6.1.0",
+                      "6.1.1",
+                      "6.1.10",
+                      "6.1.11",
+                      "6.1.12",
+                      "6.1.13",
+                      "6.1.14",
+                      "6.1.15",
+                      "6.1.16",
+                      "6.1.17",
+                      "6.1.18",
+                      "6.1.19",
+                      "6.1.2",
+                      "6.1.20",
+                      "6.1.21",
+                      "6.1.3",
+                      "6.1.4",
+                      "6.1.5",
+                      "6.1.6",
+                      "6.1.7",
+                      "6.1.8",
+                      "6.1.9"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/06/GHSA-9f52-rjqv-25qv/GHSA-9f52-rjqv-25qv.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework:spring-expression",
+                      "purl": "pkg:maven/org.springframework/spring-expression"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "0"
+                          },
+                          {
+                            "last_affected": "5.3.39"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "3.0.0.RELEASE",
+                      "3.0.1.RELEASE",
+                      "3.0.2.RELEASE",
+                      "3.0.3.RELEASE",
+                      "3.0.4.RELEASE",
+                      "3.0.5.RELEASE",
+                      "3.0.6.RELEASE",
+                      "3.0.7.RELEASE",
+                      "3.1.0.RELEASE",
+                      "3.1.1.RELEASE",
+                      "3.1.2.RELEASE",
+                      "3.1.3.RELEASE",
+                      "3.1.4.RELEASE",
+                      "3.2.0.RELEASE",
+                      "3.2.1.RELEASE",
+                      "3.2.10.RELEASE",
+                      "3.2.11.RELEASE",
+                      "3.2.12.RELEASE",
+                      "3.2.13.RELEASE",
+                      "3.2.14.RELEASE",
+                      "3.2.15.RELEASE",
+                      "3.2.16.RELEASE",
+                      "3.2.17.RELEASE",
+                      "3.2.18.RELEASE",
+                      "3.2.2.RELEASE",
+                      "3.2.3.RELEASE",
+                      "3.2.4.RELEASE",
+                      "3.2.5.RELEASE",
+                      "3.2.6.RELEASE",
+                      "3.2.7.RELEASE",
+                      "3.2.8.RELEASE",
+                      "3.2.9.RELEASE",
+                      "4.0.0.RELEASE",
+                      "4.0.1.RELEASE",
+                      "4.0.2.RELEASE",
+                      "4.0.3.RELEASE",
+                      "4.0.4.RELEASE",
+                      "4.0.5.RELEASE",
+                      "4.0.6.RELEASE",
+                      "4.0.7.RELEASE",
+                      "4.0.8.RELEASE",
+                      "4.0.9.RELEASE",
+                      "4.1.0.RELEASE",
+                      "4.1.1.RELEASE",
+                      "4.1.2.RELEASE",
+                      "4.1.3.RELEASE",
+                      "4.1.4.RELEASE",
+                      "4.1.5.RELEASE",
+                      "4.1.6.RELEASE",
+                      "4.1.7.RELEASE",
+                      "4.1.8.RELEASE",
+                      "4.1.9.RELEASE",
+                      "4.2.0.RELEASE",
+                      "4.2.1.RELEASE",
+                      "4.2.2.RELEASE",
+                      "4.2.3.RELEASE",
+                      "4.2.4.RELEASE",
+                      "4.2.5.RELEASE",
+                      "4.2.6.RELEASE",
+                      "4.2.7.RELEASE",
+                      "4.2.8.RELEASE",
+                      "4.2.9.RELEASE",
+                      "4.3.0.RELEASE",
+                      "4.3.1.RELEASE",
+                      "4.3.10.RELEASE",
+                      "4.3.11.RELEASE",
+                      "4.3.12.RELEASE",
+                      "4.3.13.RELEASE",
+                      "4.3.14.RELEASE",
+                      "4.3.15.RELEASE",
+                      "4.3.16.RELEASE",
+                      "4.3.17.RELEASE",
+                      "4.3.18.RELEASE",
+                      "4.3.19.RELEASE",
+                      "4.3.2.RELEASE",
+                      "4.3.20.RELEASE",
+                      "4.3.21.RELEASE",
+                      "4.3.22.RELEASE",
+                      "4.3.23.RELEASE",
+                      "4.3.24.RELEASE",
+                      "4.3.25.RELEASE",
+                      "4.3.26.RELEASE",
+                      "4.3.27.RELEASE",
+                      "4.3.28.RELEASE",
+                      "4.3.29.RELEASE",
+                      "4.3.3.RELEASE",
+                      "4.3.30.RELEASE",
+                      "4.3.4.RELEASE",
+                      "4.3.5.RELEASE",
+                      "4.3.6.RELEASE",
+                      "4.3.7.RELEASE",
+                      "4.3.8.RELEASE",
+                      "4.3.9.RELEASE",
+                      "5.0.0.RELEASE",
+                      "5.0.1.RELEASE",
+                      "5.0.10.RELEASE",
+                      "5.0.11.RELEASE",
+                      "5.0.12.RELEASE",
+                      "5.0.13.RELEASE",
+                      "5.0.14.RELEASE",
+                      "5.0.15.RELEASE",
+                      "5.0.16.RELEASE",
+                      "5.0.17.RELEASE",
+                      "5.0.18.RELEASE",
+                      "5.0.19.RELEASE",
+                      "5.0.2.RELEASE",
+                      "5.0.20.RELEASE",
+                      "5.0.3.RELEASE",
+                      "5.0.4.RELEASE",
+                      "5.0.5.RELEASE",
+                      "5.0.6.RELEASE",
+                      "5.0.7.RELEASE",
+                      "5.0.8.RELEASE",
+                      "5.0.9.RELEASE",
+                      "5.1.0.RELEASE",
+                      "5.1.1.RELEASE",
+                      "5.1.10.RELEASE",
+                      "5.1.11.RELEASE",
+                      "5.1.12.RELEASE",
+                      "5.1.13.RELEASE",
+                      "5.1.14.RELEASE",
+                      "5.1.15.RELEASE",
+                      "5.1.16.RELEASE",
+                      "5.1.17.RELEASE",
+                      "5.1.18.RELEASE",
+                      "5.1.19.RELEASE",
+                      "5.1.2.RELEASE",
+                      "5.1.20.RELEASE",
+                      "5.1.3.RELEASE",
+                      "5.1.4.RELEASE",
+                      "5.1.5.RELEASE",
+                      "5.1.6.RELEASE",
+                      "5.1.7.RELEASE",
+                      "5.1.8.RELEASE",
+                      "5.1.9.RELEASE",
+                      "5.2.0.RELEASE",
+                      "5.2.1.RELEASE",
+                      "5.2.10.RELEASE",
+                      "5.2.11.RELEASE",
+                      "5.2.12.RELEASE",
+                      "5.2.13.RELEASE",
+                      "5.2.14.RELEASE",
+                      "5.2.15.RELEASE",
+                      "5.2.16.RELEASE",
+                      "5.2.17.RELEASE",
+                      "5.2.18.RELEASE",
+                      "5.2.19.RELEASE",
+                      "5.2.2.RELEASE",
+                      "5.2.20.RELEASE",
+                      "5.2.21.RELEASE",
+                      "5.2.22.RELEASE",
+                      "5.2.23.RELEASE",
+                      "5.2.24.RELEASE",
+                      "5.2.25.RELEASE",
+                      "5.2.3.RELEASE",
+                      "5.2.4.RELEASE",
+                      "5.2.5.RELEASE",
+                      "5.2.6.RELEASE",
+                      "5.2.7.RELEASE",
+                      "5.2.8.RELEASE",
+                      "5.2.9.RELEASE",
+                      "5.3.0",
+                      "5.3.1",
+                      "5.3.10",
+                      "5.3.11",
+                      "5.3.12",
+                      "5.3.13",
+                      "5.3.14",
+                      "5.3.15",
+                      "5.3.16",
+                      "5.3.17",
+                      "5.3.18",
+                      "5.3.19",
+                      "5.3.2",
+                      "5.3.20",
+                      "5.3.21",
+                      "5.3.22",
+                      "5.3.23",
+                      "5.3.24",
+                      "5.3.25",
+                      "5.3.26",
+                      "5.3.27",
+                      "5.3.28",
+                      "5.3.29",
+                      "5.3.3",
+                      "5.3.30",
+                      "5.3.31",
+                      "5.3.32",
+                      "5.3.33",
+                      "5.3.34",
+                      "5.3.35",
+                      "5.3.36",
+                      "5.3.37",
+                      "5.3.38",
+                      "5.3.39",
+                      "5.3.4",
+                      "5.3.5",
+                      "5.3.6",
+                      "5.3.7",
+                      "5.3.8",
+                      "5.3.9"
+                    ]
+                  }
+                ],
+                "aliases": [
+                  "CVE-2026-41852"
+                ],
+                "database_specific": {
+                  "cwe_ids": [
+                    "CWE-863"
+                  ],
+                  "github_reviewed": true,
+                  "github_reviewed_at": "2026-07-30T18:13:42Z",
+                  "nvd_published_at": "2026-06-09T05:16:37Z",
+                  "severity": "LOW"
+                },
+                "details": "A vulnerability in Spring Expression Language (SpEL) evaluation logic allows for arbitrary zero-argument method invocation, even within restricted or read-only contexts, which may allow an attacker to invoke unintended application logic.\n\nAffected versions:\nSpring Framework 7.0.0 through 7.0.7; 6.2.0 through 6.2.18; 6.1.0 through 6.1.27; 5.3.0 through 5.3.48.",
+                "id": "GHSA-9f52-rjqv-25qv",
+                "modified": "2026-09-10T03:50:49.325466833Z",
+                "published": "2026-06-09T06:31:58Z",
+                "references": [
+                  {
+                    "type": "ADVISORY",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41852"
+                  },
+                  {
+                    "type": "PACKAGE",
+                    "url": "https://github.com/spring-projects/spring-framework"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://github.com/spring-projects/spring-framework/releases/tag/v6.2.19"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://github.com/spring-projects/spring-framework/releases/tag/v7.0.8"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://spring.io/security/cve-2026-41852"
+                  }
+                ],
+                "schema_version": "1.9.0",
+                "severity": [
+                  {
+                    "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                    "type": "CVSS_V3"
+                  }
+                ],
+                "summary": "Spring Framework Arbitrary Method Invocation in SpEL Expressions"
+              },
+              {
+                "affected": [
+                  {
+                    "database_specific": {
+                      "last_known_affected_version_range": "<= 7.0.7",
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/06/GHSA-r5w3-xv2f-j59q/GHSA-r5w3-xv2f-j59q.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework:spring-expression",
+                      "purl": "pkg:maven/org.springframework/spring-expression"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "7.0.0"
+                          },
+                          {
+                            "fixed": "7.0.8"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "7.0.0",
+                      "7.0.1",
+                      "7.0.2",
+                      "7.0.3",
+                      "7.0.4",
+                      "7.0.5",
+                      "7.0.6",
+                      "7.0.7"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "last_known_affected_version_range": "<= 6.2.18",
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/06/GHSA-r5w3-xv2f-j59q/GHSA-r5w3-xv2f-j59q.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework:spring-expression",
+                      "purl": "pkg:maven/org.springframework/spring-expression"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "6.2.0"
+                          },
+                          {
+                            "fixed": "6.2.19"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "6.2.0",
+                      "6.2.1",
+                      "6.2.10",
+                      "6.2.11",
+                      "6.2.12",
+                      "6.2.13",
+                      "6.2.14",
+                      "6.2.15",
+                      "6.2.16",
+                      "6.2.17",
+                      "6.2.18",
+                      "6.2.2",
+                      "6.2.3",
+                      "6.2.4",
+                      "6.2.5",
+                      "6.2.6",
+                      "6.2.7",
+                      "6.2.8",
+                      "6.2.9"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/06/GHSA-r5w3-xv2f-j59q/GHSA-r5w3-xv2f-j59q.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework:spring-expression",
+                      "purl": "pkg:maven/org.springframework/spring-expression"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "6.1.0"
+                          },
+                          {
+                            "last_affected": "6.1.21"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "6.1.0",
+                      "6.1.1",
+                      "6.1.10",
+                      "6.1.11",
+                      "6.1.12",
+                      "6.1.13",
+                      "6.1.14",
+                      "6.1.15",
+                      "6.1.16",
+                      "6.1.17",
+                      "6.1.18",
+                      "6.1.19",
+                      "6.1.2",
+                      "6.1.20",
+                      "6.1.21",
+                      "6.1.3",
+                      "6.1.4",
+                      "6.1.5",
+                      "6.1.6",
+                      "6.1.7",
+                      "6.1.8",
+                      "6.1.9"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/06/GHSA-r5w3-xv2f-j59q/GHSA-r5w3-xv2f-j59q.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework:spring-expression",
+                      "purl": "pkg:maven/org.springframework/spring-expression"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "0"
+                          },
+                          {
+                            "last_affected": "5.3.39"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "3.0.0.RELEASE",
+                      "3.0.1.RELEASE",
+                      "3.0.2.RELEASE",
+                      "3.0.3.RELEASE",
+                      "3.0.4.RELEASE",
+                      "3.0.5.RELEASE",
+                      "3.0.6.RELEASE",
+                      "3.0.7.RELEASE",
+                      "3.1.0.RELEASE",
+                      "3.1.1.RELEASE",
+                      "3.1.2.RELEASE",
+                      "3.1.3.RELEASE",
+                      "3.1.4.RELEASE",
+                      "3.2.0.RELEASE",
+                      "3.2.1.RELEASE",
+                      "3.2.10.RELEASE",
+                      "3.2.11.RELEASE",
+                      "3.2.12.RELEASE",
+                      "3.2.13.RELEASE",
+                      "3.2.14.RELEASE",
+                      "3.2.15.RELEASE",
+                      "3.2.16.RELEASE",
+                      "3.2.17.RELEASE",
+                      "3.2.18.RELEASE",
+                      "3.2.2.RELEASE",
+                      "3.2.3.RELEASE",
+                      "3.2.4.RELEASE",
+                      "3.2.5.RELEASE",
+                      "3.2.6.RELEASE",
+                      "3.2.7.RELEASE",
+                      "3.2.8.RELEASE",
+                      "3.2.9.RELEASE",
+                      "4.0.0.RELEASE",
+                      "4.0.1.RELEASE",
+                      "4.0.2.RELEASE",
+                      "4.0.3.RELEASE",
+                      "4.0.4.RELEASE",
+                      "4.0.5.RELEASE",
+                      "4.0.6.RELEASE",
+                      "4.0.7.RELEASE",
+                      "4.0.8.RELEASE",
+                      "4.0.9.RELEASE",
+                      "4.1.0.RELEASE",
+                      "4.1.1.RELEASE",
+                      "4.1.2.RELEASE",
+                      "4.1.3.RELEASE",
+                      "4.1.4.RELEASE",
+                      "4.1.5.RELEASE",
+                      "4.1.6.RELEASE",
+                      "4.1.7.RELEASE",
+                      "4.1.8.RELEASE",
+                      "4.1.9.RELEASE",
+                      "4.2.0.RELEASE",
+                      "4.2.1.RELEASE",
+                      "4.2.2.RELEASE",
+                      "4.2.3.RELEASE",
+                      "4.2.4.RELEASE",
+                      "4.2.5.RELEASE",
+                      "4.2.6.RELEASE",
+                      "4.2.7.RELEASE",
+                      "4.2.8.RELEASE",
+                      "4.2.9.RELEASE",
+                      "4.3.0.RELEASE",
+                      "4.3.1.RELEASE",
+                      "4.3.10.RELEASE",
+                      "4.3.11.RELEASE",
+                      "4.3.12.RELEASE",
+                      "4.3.13.RELEASE",
+                      "4.3.14.RELEASE",
+                      "4.3.15.RELEASE",
+                      "4.3.16.RELEASE",
+                      "4.3.17.RELEASE",
+                      "4.3.18.RELEASE",
+                      "4.3.19.RELEASE",
+                      "4.3.2.RELEASE",
+                      "4.3.20.RELEASE",
+                      "4.3.21.RELEASE",
+                      "4.3.22.RELEASE",
+                      "4.3.23.RELEASE",
+                      "4.3.24.RELEASE",
+                      "4.3.25.RELEASE",
+                      "4.3.26.RELEASE",
+                      "4.3.27.RELEASE",
+                      "4.3.28.RELEASE",
+                      "4.3.29.RELEASE",
+                      "4.3.3.RELEASE",
+                      "4.3.30.RELEASE",
+                      "4.3.4.RELEASE",
+                      "4.3.5.RELEASE",
+                      "4.3.6.RELEASE",
+                      "4.3.7.RELEASE",
+                      "4.3.8.RELEASE",
+                      "4.3.9.RELEASE",
+                      "5.0.0.RELEASE",
+                      "5.0.1.RELEASE",
+                      "5.0.10.RELEASE",
+                      "5.0.11.RELEASE",
+                      "5.0.12.RELEASE",
+                      "5.0.13.RELEASE",
+                      "5.0.14.RELEASE",
+                      "5.0.15.RELEASE",
+                      "5.0.16.RELEASE",
+                      "5.0.17.RELEASE",
+                      "5.0.18.RELEASE",
+                      "5.0.19.RELEASE",
+                      "5.0.2.RELEASE",
+                      "5.0.20.RELEASE",
+                      "5.0.3.RELEASE",
+                      "5.0.4.RELEASE",
+                      "5.0.5.RELEASE",
+                      "5.0.6.RELEASE",
+                      "5.0.7.RELEASE",
+                      "5.0.8.RELEASE",
+                      "5.0.9.RELEASE",
+                      "5.1.0.RELEASE",
+                      "5.1.1.RELEASE",
+                      "5.1.10.RELEASE",
+                      "5.1.11.RELEASE",
+                      "5.1.12.RELEASE",
+                      "5.1.13.RELEASE",
+                      "5.1.14.RELEASE",
+                      "5.1.15.RELEASE",
+                      "5.1.16.RELEASE",
+                      "5.1.17.RELEASE",
+                      "5.1.18.RELEASE",
+                      "5.1.19.RELEASE",
+                      "5.1.2.RELEASE",
+                      "5.1.20.RELEASE",
+                      "5.1.3.RELEASE",
+                      "5.1.4.RELEASE",
+                      "5.1.5.RELEASE",
+                      "5.1.6.RELEASE",
+                      "5.1.7.RELEASE",
+                      "5.1.8.RELEASE",
+                      "5.1.9.RELEASE",
+                      "5.2.0.RELEASE",
+                      "5.2.1.RELEASE",
+                      "5.2.10.RELEASE",
+                      "5.2.11.RELEASE",
+                      "5.2.12.RELEASE",
+                      "5.2.13.RELEASE",
+                      "5.2.14.RELEASE",
+                      "5.2.15.RELEASE",
+                      "5.2.16.RELEASE",
+                      "5.2.17.RELEASE",
+                      "5.2.18.RELEASE",
+                      "5.2.19.RELEASE",
+                      "5.2.2.RELEASE",
+                      "5.2.20.RELEASE",
+                      "5.2.21.RELEASE",
+                      "5.2.22.RELEASE",
+                      "5.2.23.RELEASE",
+                      "5.2.24.RELEASE",
+                      "5.2.25.RELEASE",
+                      "5.2.3.RELEASE",
+                      "5.2.4.RELEASE",
+                      "5.2.5.RELEASE",
+                      "5.2.6.RELEASE",
+                      "5.2.7.RELEASE",
+                      "5.2.8.RELEASE",
+                      "5.2.9.RELEASE",
+                      "5.3.0",
+                      "5.3.1",
+                      "5.3.10",
+                      "5.3.11",
+                      "5.3.12",
+                      "5.3.13",
+                      "5.3.14",
+                      "5.3.15",
+                      "5.3.16",
+                      "5.3.17",
+                      "5.3.18",
+                      "5.3.19",
+                      "5.3.2",
+                      "5.3.20",
+                      "5.3.21",
+                      "5.3.22",
+                      "5.3.23",
+                      "5.3.24",
+                      "5.3.25",
+                      "5.3.26",
+                      "5.3.27",
+                      "5.3.28",
+                      "5.3.29",
+                      "5.3.3",
+                      "5.3.30",
+                      "5.3.31",
+                      "5.3.32",
+                      "5.3.33",
+                      "5.3.34",
+                      "5.3.35",
+                      "5.3.36",
+                      "5.3.37",
+                      "5.3.38",
+                      "5.3.39",
+                      "5.3.4",
+                      "5.3.5",
+                      "5.3.6",
+                      "5.3.7",
+                      "5.3.8",
+                      "5.3.9"
+                    ]
+                  }
+                ],
+                "aliases": [
+                  "CVE-2026-41850"
+                ],
+                "database_specific": {
+                  "cwe_ids": [
+                    "CWE-407"
+                  ],
+                  "github_reviewed": true,
+                  "github_reviewed_at": "2026-07-30T18:26:06Z",
+                  "nvd_published_at": "2026-06-09T05:16:37Z",
+                  "severity": "HIGH"
+                },
+                "details": "Applications that evaluate user-supplied Spring Expression Language (SpEL) expressions are vulnerable to an Algorithmic Denial of Service (DoS). By providing a specially crafted expression, an attacker can trigger excessive resource consumption during evaluation, leading to application degradation or unavailability.\n\nAffected versions:\nSpring Framework 7.0.0 through 7.0.7; 6.2.0 through 6.2.18; 6.1.0 through 6.1.27; 5.3.0 through 5.3.48.",
+                "id": "GHSA-r5w3-xv2f-j59q",
+                "modified": "2026-09-10T03:50:50.592219153Z",
+                "published": "2026-06-09T06:31:58Z",
+                "references": [
+                  {
+                    "type": "ADVISORY",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41850"
+                  },
+                  {
+                    "type": "PACKAGE",
+                    "url": "https://github.com/spring-projects/spring-framework"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://github.com/spring-projects/spring-framework/releases/tag/v6.2.19"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://github.com/spring-projects/spring-framework/releases/tag/v7.0.8"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://spring.io/security/cve-2026-41850"
+                  }
+                ],
+                "schema_version": "1.9.0",
+                "severity": [
+                  {
+                    "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                    "type": "CVSS_V3"
+                  }
+                ],
+                "summary": "Spring Framework Algorithmic Denial of Service via SpEL Expressions"
+              },
+              {
+                "affected": [
+                  {
+                    "database_specific": {
+                      "last_known_affected_version_range": "<= 7.0.7",
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/06/GHSA-wxpp-56q6-5pcg/GHSA-wxpp-56q6-5pcg.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework:spring-expression",
+                      "purl": "pkg:maven/org.springframework/spring-expression"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "7.0.0"
+                          },
+                          {
+                            "fixed": "7.0.8"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "7.0.0",
+                      "7.0.1",
+                      "7.0.2",
+                      "7.0.3",
+                      "7.0.4",
+                      "7.0.5",
+                      "7.0.6",
+                      "7.0.7"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "last_known_affected_version_range": "<= 6.2.18",
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/06/GHSA-wxpp-56q6-5pcg/GHSA-wxpp-56q6-5pcg.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework:spring-expression",
+                      "purl": "pkg:maven/org.springframework/spring-expression"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "6.2.0"
+                          },
+                          {
+                            "fixed": "6.2.19"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "6.2.0",
+                      "6.2.1",
+                      "6.2.10",
+                      "6.2.11",
+                      "6.2.12",
+                      "6.2.13",
+                      "6.2.14",
+                      "6.2.15",
+                      "6.2.16",
+                      "6.2.17",
+                      "6.2.18",
+                      "6.2.2",
+                      "6.2.3",
+                      "6.2.4",
+                      "6.2.5",
+                      "6.2.6",
+                      "6.2.7",
+                      "6.2.8",
+                      "6.2.9"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/06/GHSA-wxpp-56q6-5pcg/GHSA-wxpp-56q6-5pcg.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework:spring-expression",
+                      "purl": "pkg:maven/org.springframework/spring-expression"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "6.1.0"
+                          },
+                          {
+                            "last_affected": "6.1.21"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "6.1.0",
+                      "6.1.1",
+                      "6.1.10",
+                      "6.1.11",
+                      "6.1.12",
+                      "6.1.13",
+                      "6.1.14",
+                      "6.1.15",
+                      "6.1.16",
+                      "6.1.17",
+                      "6.1.18",
+                      "6.1.19",
+                      "6.1.2",
+                      "6.1.20",
+                      "6.1.21",
+                      "6.1.3",
+                      "6.1.4",
+                      "6.1.5",
+                      "6.1.6",
+                      "6.1.7",
+                      "6.1.8",
+                      "6.1.9"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/06/GHSA-wxpp-56q6-5pcg/GHSA-wxpp-56q6-5pcg.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework:spring-expression",
+                      "purl": "pkg:maven/org.springframework/spring-expression"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "0"
+                          },
+                          {
+                            "last_affected": "5.3.39"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "3.0.0.RELEASE",
+                      "3.0.1.RELEASE",
+                      "3.0.2.RELEASE",
+                      "3.0.3.RELEASE",
+                      "3.0.4.RELEASE",
+                      "3.0.5.RELEASE",
+                      "3.0.6.RELEASE",
+                      "3.0.7.RELEASE",
+                      "3.1.0.RELEASE",
+                      "3.1.1.RELEASE",
+                      "3.1.2.RELEASE",
+                      "3.1.3.RELEASE",
+                      "3.1.4.RELEASE",
+                      "3.2.0.RELEASE",
+                      "3.2.1.RELEASE",
+                      "3.2.10.RELEASE",
+                      "3.2.11.RELEASE",
+                      "3.2.12.RELEASE",
+                      "3.2.13.RELEASE",
+                      "3.2.14.RELEASE",
+                      "3.2.15.RELEASE",
+                      "3.2.16.RELEASE",
+                      "3.2.17.RELEASE",
+                      "3.2.18.RELEASE",
+                      "3.2.2.RELEASE",
+                      "3.2.3.RELEASE",
+                      "3.2.4.RELEASE",
+                      "3.2.5.RELEASE",
+                      "3.2.6.RELEASE",
+                      "3.2.7.RELEASE",
+                      "3.2.8.RELEASE",
+                      "3.2.9.RELEASE",
+                      "4.0.0.RELEASE",
+                      "4.0.1.RELEASE",
+                      "4.0.2.RELEASE",
+                      "4.0.3.RELEASE",
+                      "4.0.4.RELEASE",
+                      "4.0.5.RELEASE",
+                      "4.0.6.RELEASE",
+                      "4.0.7.RELEASE",
+                      "4.0.8.RELEASE",
+                      "4.0.9.RELEASE",
+                      "4.1.0.RELEASE",
+                      "4.1.1.RELEASE",
+                      "4.1.2.RELEASE",
+                      "4.1.3.RELEASE",
+                      "4.1.4.RELEASE",
+                      "4.1.5.RELEASE",
+                      "4.1.6.RELEASE",
+                      "4.1.7.RELEASE",
+                      "4.1.8.RELEASE",
+                      "4.1.9.RELEASE",
+                      "4.2.0.RELEASE",
+                      "4.2.1.RELEASE",
+                      "4.2.2.RELEASE",
+                      "4.2.3.RELEASE",
+                      "4.2.4.RELEASE",
+                      "4.2.5.RELEASE",
+                      "4.2.6.RELEASE",
+                      "4.2.7.RELEASE",
+                      "4.2.8.RELEASE",
+                      "4.2.9.RELEASE",
+                      "4.3.0.RELEASE",
+                      "4.3.1.RELEASE",
+                      "4.3.10.RELEASE",
+                      "4.3.11.RELEASE",
+                      "4.3.12.RELEASE",
+                      "4.3.13.RELEASE",
+                      "4.3.14.RELEASE",
+                      "4.3.15.RELEASE",
+                      "4.3.16.RELEASE",
+                      "4.3.17.RELEASE",
+                      "4.3.18.RELEASE",
+                      "4.3.19.RELEASE",
+                      "4.3.2.RELEASE",
+                      "4.3.20.RELEASE",
+                      "4.3.21.RELEASE",
+                      "4.3.22.RELEASE",
+                      "4.3.23.RELEASE",
+                      "4.3.24.RELEASE",
+                      "4.3.25.RELEASE",
+                      "4.3.26.RELEASE",
+                      "4.3.27.RELEASE",
+                      "4.3.28.RELEASE",
+                      "4.3.29.RELEASE",
+                      "4.3.3.RELEASE",
+                      "4.3.30.RELEASE",
+                      "4.3.4.RELEASE",
+                      "4.3.5.RELEASE",
+                      "4.3.6.RELEASE",
+                      "4.3.7.RELEASE",
+                      "4.3.8.RELEASE",
+                      "4.3.9.RELEASE",
+                      "5.0.0.RELEASE",
+                      "5.0.1.RELEASE",
+                      "5.0.10.RELEASE",
+                      "5.0.11.RELEASE",
+                      "5.0.12.RELEASE",
+                      "5.0.13.RELEASE",
+                      "5.0.14.RELEASE",
+                      "5.0.15.RELEASE",
+                      "5.0.16.RELEASE",
+                      "5.0.17.RELEASE",
+                      "5.0.18.RELEASE",
+                      "5.0.19.RELEASE",
+                      "5.0.2.RELEASE",
+                      "5.0.20.RELEASE",
+                      "5.0.3.RELEASE",
+                      "5.0.4.RELEASE",
+                      "5.0.5.RELEASE",
+                      "5.0.6.RELEASE",
+                      "5.0.7.RELEASE",
+                      "5.0.8.RELEASE",
+                      "5.0.9.RELEASE",
+                      "5.1.0.RELEASE",
+                      "5.1.1.RELEASE",
+                      "5.1.10.RELEASE",
+                      "5.1.11.RELEASE",
+                      "5.1.12.RELEASE",
+                      "5.1.13.RELEASE",
+                      "5.1.14.RELEASE",
+                      "5.1.15.RELEASE",
+                      "5.1.16.RELEASE",
+                      "5.1.17.RELEASE",
+                      "5.1.18.RELEASE",
+                      "5.1.19.RELEASE",
+                      "5.1.2.RELEASE",
+                      "5.1.20.RELEASE",
+                      "5.1.3.RELEASE",
+                      "5.1.4.RELEASE",
+                      "5.1.5.RELEASE",
+                      "5.1.6.RELEASE",
+                      "5.1.7.RELEASE",
+                      "5.1.8.RELEASE",
+                      "5.1.9.RELEASE",
+                      "5.2.0.RELEASE",
+                      "5.2.1.RELEASE",
+                      "5.2.10.RELEASE",
+                      "5.2.11.RELEASE",
+                      "5.2.12.RELEASE",
+                      "5.2.13.RELEASE",
+                      "5.2.14.RELEASE",
+                      "5.2.15.RELEASE",
+                      "5.2.16.RELEASE",
+                      "5.2.17.RELEASE",
+                      "5.2.18.RELEASE",
+                      "5.2.19.RELEASE",
+                      "5.2.2.RELEASE",
+                      "5.2.20.RELEASE",
+                      "5.2.21.RELEASE",
+                      "5.2.22.RELEASE",
+                      "5.2.23.RELEASE",
+                      "5.2.24.RELEASE",
+                      "5.2.25.RELEASE",
+                      "5.2.3.RELEASE",
+                      "5.2.4.RELEASE",
+                      "5.2.5.RELEASE",
+                      "5.2.6.RELEASE",
+                      "5.2.7.RELEASE",
+                      "5.2.8.RELEASE",
+                      "5.2.9.RELEASE",
+                      "5.3.0",
+                      "5.3.1",
+                      "5.3.10",
+                      "5.3.11",
+                      "5.3.12",
+                      "5.3.13",
+                      "5.3.14",
+                      "5.3.15",
+                      "5.3.16",
+                      "5.3.17",
+                      "5.3.18",
+                      "5.3.19",
+                      "5.3.2",
+                      "5.3.20",
+                      "5.3.21",
+                      "5.3.22",
+                      "5.3.23",
+                      "5.3.24",
+                      "5.3.25",
+                      "5.3.26",
+                      "5.3.27",
+                      "5.3.28",
+                      "5.3.29",
+                      "5.3.3",
+                      "5.3.30",
+                      "5.3.31",
+                      "5.3.32",
+                      "5.3.33",
+                      "5.3.34",
+                      "5.3.35",
+                      "5.3.36",
+                      "5.3.37",
+                      "5.3.38",
+                      "5.3.39",
+                      "5.3.4",
+                      "5.3.5",
+                      "5.3.6",
+                      "5.3.7",
+                      "5.3.8",
+                      "5.3.9"
+                    ]
+                  }
+                ],
+                "aliases": [
+                  "CVE-2026-41851"
+                ],
+                "database_specific": {
+                  "cwe_ids": [
+                    "CWE-770"
+                  ],
+                  "github_reviewed": true,
+                  "github_reviewed_at": "2026-07-30T16:38:19Z",
+                  "nvd_published_at": "2026-06-09T05:16:37Z",
+                  "severity": "MODERATE"
+                },
+                "details": "Applications which accept user-supplied Spring Expression Language (SpEL) expressions may be vulnerable to a Denial of Service (DoS) attack if the evaluation of a SpEL expression triggers unbounded cache growth.\n\nAffected versions:\nSpring Framework 7.0.0 through 7.0.7; 6.2.0 through 6.2.18; 6.1.0 through 6.1.27; 5.3.0 through 5.3.48.",
+                "id": "GHSA-wxpp-56q6-5pcg",
+                "modified": "2026-09-10T03:50:51.051005886Z",
+                "published": "2026-06-09T06:31:58Z",
+                "references": [
+                  {
+                    "type": "ADVISORY",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-41851"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://github.com/spring-projects/spring-framework/commit/2c18c33ce0f89bf718c184190cfb7ed49b4276fb"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://github.com/spring-projects/spring-framework/commit/76a36dfd707cddbe7118a81c2e055b36501d2cff"
+                  },
+                  {
+                    "type": "PACKAGE",
+                    "url": "https://github.com/spring-projects/spring-framework"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://github.com/spring-projects/spring-framework/releases/tag/v6.2.19"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://github.com/spring-projects/spring-framework/releases/tag/v7.0.8"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://spring.io/security/cve-2026-41851"
+                  }
+                ],
+                "schema_version": "1.9.0",
+                "severity": [
+                  {
+                    "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                    "type": "CVSS_V3"
+                  }
+                ],
+                "summary": "Spring Framework Denial of Service via Unbounded Cache in SpEL"
+              }
+            ]
+          },
+          {
+            "package": {
+              "name": "org.springframework:spring-jcl",
+              "version": "6.2.15",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.springframework/spring-jcl@6.2.15?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "org.springframework.security:spring-security-core",
+              "version": "6.4.13",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.springframework.security/spring-security-core@6.4.13?type=jar"
+            },
+            "groups": [
+              {
+                "ids": [
+                  "GHSA-vxf7-qj7q-83fh"
+                ],
+                "aliases": [
+                  "CVE-2026-22746",
+                  "GHSA-vxf7-qj7q-83fh"
+                ],
+                "max_severity": "3.7"
+              },
+              {
+                "ids": [
+                  "GHSA-x2wq-9x2f-fhj7"
+                ],
+                "aliases": [
+                  "CVE-2026-22751",
+                  "GHSA-x2wq-9x2f-fhj7"
+                ],
+                "max_severity": "4.8"
+              }
+            ],
+            "vulnerabilities": [
+              {
+                "affected": [
+                  {
+                    "database_specific": {
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/04/GHSA-vxf7-qj7q-83fh/GHSA-vxf7-qj7q-83fh.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework.security:spring-security-core",
+                      "purl": "pkg:maven/org.springframework.security/spring-security-core"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "5.7.0"
+                          },
+                          {
+                            "last_affected": "5.7.22"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "5.7.0",
+                      "5.7.1",
+                      "5.7.10",
+                      "5.7.11",
+                      "5.7.12",
+                      "5.7.13",
+                      "5.7.14",
+                      "5.7.2",
+                      "5.7.3",
+                      "5.7.4",
+                      "5.7.5",
+                      "5.7.6",
+                      "5.7.7",
+                      "5.7.8",
+                      "5.7.9"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/04/GHSA-vxf7-qj7q-83fh/GHSA-vxf7-qj7q-83fh.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework.security:spring-security-core",
+                      "purl": "pkg:maven/org.springframework.security/spring-security-core"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "5.8.0"
+                          },
+                          {
+                            "last_affected": "5.8.24"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "5.8.0",
+                      "5.8.1",
+                      "5.8.10",
+                      "5.8.11",
+                      "5.8.12",
+                      "5.8.13",
+                      "5.8.14",
+                      "5.8.15",
+                      "5.8.16",
+                      "5.8.2",
+                      "5.8.3",
+                      "5.8.4",
+                      "5.8.5",
+                      "5.8.6",
+                      "5.8.7",
+                      "5.8.8",
+                      "5.8.9"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/04/GHSA-vxf7-qj7q-83fh/GHSA-vxf7-qj7q-83fh.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework.security:spring-security-core",
+                      "purl": "pkg:maven/org.springframework.security/spring-security-core"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "6.3.0"
+                          },
+                          {
+                            "last_affected": "6.3.15"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "6.3.0",
+                      "6.3.1",
+                      "6.3.10",
+                      "6.3.2",
+                      "6.3.3",
+                      "6.3.4",
+                      "6.3.5",
+                      "6.3.6",
+                      "6.3.7",
+                      "6.3.8",
+                      "6.3.9"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/04/GHSA-vxf7-qj7q-83fh/GHSA-vxf7-qj7q-83fh.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework.security:spring-security-core",
+                      "purl": "pkg:maven/org.springframework.security/spring-security-core"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "6.4.0"
+                          },
+                          {
+                            "last_affected": "6.4.15"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "6.4.0",
+                      "6.4.1",
+                      "6.4.10",
+                      "6.4.11",
+                      "6.4.12",
+                      "6.4.13",
+                      "6.4.2",
+                      "6.4.3",
+                      "6.4.4",
+                      "6.4.5",
+                      "6.4.6",
+                      "6.4.7",
+                      "6.4.8",
+                      "6.4.9"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "last_known_affected_version_range": "<= 6.5.9",
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/04/GHSA-vxf7-qj7q-83fh/GHSA-vxf7-qj7q-83fh.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework.security:spring-security-core",
+                      "purl": "pkg:maven/org.springframework.security/spring-security-core"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "6.5.0"
+                          },
+                          {
+                            "fixed": "6.5.10"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "6.5.0",
+                      "6.5.1",
+                      "6.5.2",
+                      "6.5.3",
+                      "6.5.4",
+                      "6.5.5",
+                      "6.5.6",
+                      "6.5.7",
+                      "6.5.8",
+                      "6.5.9"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "last_known_affected_version_range": "<= 7.0.4",
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/04/GHSA-vxf7-qj7q-83fh/GHSA-vxf7-qj7q-83fh.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework.security:spring-security-core",
+                      "purl": "pkg:maven/org.springframework.security/spring-security-core"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "7.0.0"
+                          },
+                          {
+                            "fixed": "7.0.5"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "7.0.0",
+                      "7.0.1",
+                      "7.0.2",
+                      "7.0.3",
+                      "7.0.4"
+                    ]
+                  }
+                ],
+                "aliases": [
+                  "CVE-2026-22746"
+                ],
+                "database_specific": {
+                  "cwe_ids": [
+                    "CWE-208"
+                  ],
+                  "github_reviewed": true,
+                  "github_reviewed_at": "2026-04-29T20:48:02Z",
+                  "nvd_published_at": "2026-04-22T06:16:02Z",
+                  "severity": "LOW"
+                },
+                "details": "Vulnerability in Spring Spring Security. If an application is using the UserDetails#isEnabled, #isAccountNonExpired, or #isAccountNonLocked user attributes, to enable, expire, or lock users, then DaoAuthenticationProvider's timing attack defense can be bypassed for users who are disabled, expired, or locked. This issue affects Spring Security: from 5.7.0 through 5.7.22, from 5.8.0 through 5.8.24, from 6.3.0 through 6.3.15, from 6.5.0 through 6.5.9, from 7.0.0 through 7.0.4.",
+                "id": "GHSA-vxf7-qj7q-83fh",
+                "modified": "2026-09-10T03:51:03.746044203Z",
+                "published": "2026-04-22T06:30:28Z",
+                "references": [
+                  {
+                    "type": "ADVISORY",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-22746"
+                  },
+                  {
+                    "type": "PACKAGE",
+                    "url": "https://github.com/spring-projects/spring-security"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://spring.io/security/cve-2026-22746"
+                  }
+                ],
+                "schema_version": "1.9.0",
+                "severity": [
+                  {
+                    "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "type": "CVSS_V3"
+                  }
+                ],
+                "summary": "Spring Security Vulnerable to User Attribute Enumeration when Using DaoAuthenticationProvider"
+              },
+              {
+                "affected": [
+                  {
+                    "database_specific": {
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/04/GHSA-x2wq-9x2f-fhj7/GHSA-x2wq-9x2f-fhj7.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework.security:spring-security-core",
+                      "purl": "pkg:maven/org.springframework.security/spring-security-core"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "6.5.0"
+                          },
+                          {
+                            "fixed": "6.5.10"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "6.5.0",
+                      "6.5.1",
+                      "6.5.2",
+                      "6.5.3",
+                      "6.5.4",
+                      "6.5.5",
+                      "6.5.6",
+                      "6.5.7",
+                      "6.5.8",
+                      "6.5.9"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/04/GHSA-x2wq-9x2f-fhj7/GHSA-x2wq-9x2f-fhj7.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework.security:spring-security-core",
+                      "purl": "pkg:maven/org.springframework.security/spring-security-core"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "7.0.3"
+                          },
+                          {
+                            "fixed": "7.0.5"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "7.0.3",
+                      "7.0.4"
+                    ]
+                  },
+                  {
+                    "database_specific": {
+                      "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2026/04/GHSA-x2wq-9x2f-fhj7/GHSA-x2wq-9x2f-fhj7.json"
+                    },
+                    "package": {
+                      "ecosystem": "Maven",
+                      "name": "org.springframework.security:spring-security-core",
+                      "purl": "pkg:maven/org.springframework.security/spring-security-core"
+                    },
+                    "ranges": [
+                      {
+                        "events": [
+                          {
+                            "introduced": "6.4.0"
+                          },
+                          {
+                            "last_affected": "6.4.13"
+                          }
+                        ],
+                        "type": "ECOSYSTEM"
+                      }
+                    ],
+                    "versions": [
+                      "6.4.0",
+                      "6.4.1",
+                      "6.4.10",
+                      "6.4.11",
+                      "6.4.12",
+                      "6.4.13",
+                      "6.4.2",
+                      "6.4.3",
+                      "6.4.4",
+                      "6.4.5",
+                      "6.4.6",
+                      "6.4.7",
+                      "6.4.8",
+                      "6.4.9"
+                    ]
+                  }
+                ],
+                "aliases": [
+                  "CVE-2026-22751"
+                ],
+                "database_specific": {
+                  "cwe_ids": [
+                    "CWE-367"
+                  ],
+                  "github_reviewed": true,
+                  "github_reviewed_at": "2026-04-25T23:38:48Z",
+                  "nvd_published_at": "2026-04-21T19:16:16Z",
+                  "severity": "MODERATE"
+                },
+                "details": "Vulnerability in Spring Spring Security. Applications that explicitly configure One-Time Token login with JdbcOneTimeTokenService are vulnerable to a Time-of-check Time-of-use (TOCTOU) race condition. This issue affects Spring Security: from 6.4.0 through 6.4.15, from 6.5.0 through 6.5.9, from 7.0.0 through 7.0.4.",
+                "id": "GHSA-x2wq-9x2f-fhj7",
+                "modified": "2026-09-10T03:51:03.926805089Z",
+                "published": "2026-04-21T21:31:23Z",
+                "references": [
+                  {
+                    "type": "ADVISORY",
+                    "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-22751"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://github.com/spring-projects/spring-security/commit/163772775036c4146815a5266874278c6f45f047"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://github.com/spring-projects/spring-security/commit/4187af38b251fc97fdf9949f7869618111e6e261"
+                  },
+                  {
+                    "type": "PACKAGE",
+                    "url": "https://github.com/spring-projects/spring-security"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://jinyeong.seol.pro/blogs/cve-2026-22751/en"
+                  },
+                  {
+                    "type": "WEB",
+                    "url": "https://spring.io/security/cve-2026-22751"
+                  }
+                ],
+                "schema_version": "1.9.0",
+                "severity": [
+                  {
+                    "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+                    "type": "CVSS_V3"
+                  }
+                ],
+                "summary": "Spring Security Core has a TOCTOU race condition when One-Time Token login with JdbcOneTimeTokenService is configured"
+              }
+            ]
+          },
+          {
+            "package": {
+              "name": "org.springframework.security:spring-security-crypto",
+              "version": "6.4.13",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.springframework.security/spring-security-crypto@6.4.13?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "org.springframework:spring-test",
+              "version": "6.2.15",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.springframework/spring-test@6.2.15?type=jar"
+            }
+          }
+        ]
+      }
+    ],
+    "experimental_config": {
+      "licenses": {
+        "summary": false,
+        "allowlist": null
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "scanner": "OSV-Scanner",
+  "scannerVersion": "2.7.1",
+  "scalibrVersion": "0.5.3",
+  "sourceSbom": "docs/release-evidence/sbom-v1.0.0/sbom-code-integrity-guard-parent-1.0.0.json",
+  "sbomSha256": "F483D1CCD65E1EFD4516D57EB99351EE66A62128EB3F4F13BAEA60518FDA3AC9",
+  "scannerInput": "target/osv-scanner-v2.7.1/sboms/sbom-code-integrity-guard-parent-1.0.0.cdx.json",
+  "command": [
+    "osv-scanner",
+    "scan",
+    "source",
+    "--lockfile",
+    "D:\\dev\\code-integrity-guard\\target\\osv-scanner-v2.7.1\\sboms\\sbom-code-integrity-guard-parent-1.0.0.cdx.json",
+    "--format",
+    "json",
+    "--all-packages",
+    "--all-vulns",
+    "--output-file",
+    "D:\\dev\\code-integrity-guard\\target\\osv-scanner-v2.7.1\\sboms\\sbom-code-integrity-guard-parent-1.0.0.full.json"
+  ],
+  "exitCode": 128,
+  "status": "inconclusive",
+  "stdout": null,
+  "stderr": "Starting filesystem walk for root: D:\\\r\nScanned D:\\dev\\code-integrity-guard\\target\\osv-scanner-v2.7.1\\sboms\\sbom-code-integrity-guard-parent-1.0.0.cdx.json file and found 0 packages\r\nEnd status: 0 dirs visited, 1 inodes visited, 1 Extract calls, 2.1868ms elapsed, 2.1868ms wall time\r\nNo package sources found, --help for usage information.\r\n",
+  "jsonParseError": null,
+  "result": null
+}

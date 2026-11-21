@@ -1,0 +1,108 @@
+{
+  "scanner": "OSV-Scanner",
+  "scannerVersion": "2.7.1",
+  "scalibrVersion": "0.5.3",
+  "sourceSbom": "docs/release-evidence/sbom-v1.0.0/sbom-code-integrity-guard-core-1.0.0.json",
+  "sbomSha256": "800F0579502E494F9A2262B692C41BE32AB1D6F5A1F8EB1641C62F8788E40A14",
+  "scannerInput": "target/osv-scanner-v2.7.1/sboms/sbom-code-integrity-guard-core-1.0.0.cdx.json",
+  "command": [
+    "osv-scanner",
+    "scan",
+    "source",
+    "--lockfile",
+    "D:\\dev\\code-integrity-guard\\target\\osv-scanner-v2.7.1\\sboms\\sbom-code-integrity-guard-core-1.0.0.cdx.json",
+    "--format",
+    "json",
+    "--all-packages",
+    "--all-vulns",
+    "--output-file",
+    "D:\\dev\\code-integrity-guard\\target\\osv-scanner-v2.7.1\\sboms\\sbom-code-integrity-guard-core-1.0.0.full.json"
+  ],
+  "exitCode": 0,
+  "status": "completed",
+  "stdout": null,
+  "stderr": "Starting filesystem walk for root: D:\\\r\nScanned D:\\dev\\code-integrity-guard\\target\\osv-scanner-v2.7.1\\sboms\\sbom-code-integrity-guard-core-1.0.0.cdx.json file and found 8 packages\r\nEnd status: 0 dirs visited, 1 inodes visited, 1 Extract calls, 3.2736ms elapsed, 3.2736ms wall time\r\n",
+  "jsonParseError": null,
+  "result": {
+    "results": [
+      {
+        "source": {
+          "path": "D:/dev/code-integrity-guard/target/osv-scanner-v2.7.1/sboms/sbom-code-integrity-guard-core-1.0.0.cdx.json",
+          "type": "sbom"
+        },
+        "packages": [
+          {
+            "package": {
+              "name": "org.apiguardian:apiguardian-api",
+              "version": "1.1.2",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "org.junit.jupiter:junit-jupiter",
+              "version": "5.14.3",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.junit.jupiter/junit-jupiter@5.14.3?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "org.junit.jupiter:junit-jupiter-api",
+              "version": "5.14.3",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.14.3?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "org.junit.jupiter:junit-jupiter-engine",
+              "version": "5.14.3",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.14.3?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "org.junit.jupiter:junit-jupiter-params",
+              "version": "5.14.3",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.14.3?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "org.junit.platform:junit-platform-commons",
+              "version": "1.14.3",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.junit.platform/junit-platform-commons@1.14.3?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "org.junit.platform:junit-platform-engine",
+              "version": "1.14.3",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.junit.platform/junit-platform-engine@1.14.3?type=jar"
+            }
+          },
+          {
+            "package": {
+              "name": "org.opentest4j:opentest4j",
+              "version": "1.3.0",
+              "ecosystem": "Maven",
+              "purl": "pkg:maven/org.opentest4j/opentest4j@1.3.0?type=jar"
+            }
+          }
+        ]
+      }
+    ],
+    "experimental_config": {
+      "licenses": {
+        "summary": false,
+        "allowlist": null
+      }
+    }
+  }
+}

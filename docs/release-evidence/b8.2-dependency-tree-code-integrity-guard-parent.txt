@@ -1,0 +1,1 @@
+io.github.dhionson2:code-integrity-guard-parent:pom:1.0.0-SNAPSHOT

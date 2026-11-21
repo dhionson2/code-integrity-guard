@@ -1,0 +1,6 @@
+Reactor clean install: tests=44, failures=0, errors=0, skipped=0
+Command: .\mvnw.cmd -B -ntp clean install
+Reactor: BUILD SUCCESS; all seven projects successful.
+Consumer clean verify: Surefire 2 tests (1 passed, 1 intentionally skipped); Failsafe 1 passed; CIG contract CONSUMER-OWNER-CHECK VERIFIED.
+Command: .\mvnw.cmd -B -ntp -f integration-consumer\pom.xml clean verify
+Consumer: BUILD SUCCESS.

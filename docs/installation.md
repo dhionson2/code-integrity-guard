@@ -2,11 +2,11 @@
 
 ## Local build
 
-Install Java 21, then run `./mvnw clean verify` (Windows: `mvnw.cmd clean verify`). The Wrapper downloads Maven 3.9.16 into the user's Maven Wrapper cache. No API key or external analysis service is required.
+Use Java 21+ and Maven 3.10.1+ to build the project and execute the Code Integrity Guard Maven Plugin. The checked-in Wrapper downloads Maven 3.10.1 into the user's Maven Wrapper cache; with it, run `./mvnw clean verify` (Windows: `mvnw.cmd clean verify`). No API key or external analysis service is required.
 
 ## Consumer setup
 
-After a future 1.0.0 release is published and the `io.github.dhionson2` namespace is verified, add `code-integrity-guard-testkit` as a test dependency and `code-integrity-guard-maven-plugin` to the build. Until then, build/install the modules locally with `mvnw.cmd clean install` and use `1.0.0-SNAPSHOT` for local experiments.
+The 1.0.0 release candidate is prepared locally and remains unpublished pending human release review. For local experiments with this checkout, build/install the modules with `mvnw.cmd clean install` and use version `1.0.0`; Maven Central consumers can use these coordinates after publication is explicitly authorized.
 
 1. Write independently authored contract rows in `.cig/contracts.tsv`.
 2. Register `EvidenceExtension` on JUnit Jupiter test classes and annotate methods with stable test IDs.

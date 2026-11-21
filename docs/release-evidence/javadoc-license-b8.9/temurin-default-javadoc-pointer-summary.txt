@@ -1,0 +1,4 @@
+Default Javadoc 21 behavior observed with Eclipse Temurin 21.0.13.1+2:
+legal/LICENSE, legal/ADDITIONAL_LICENSE_INFO and legal/ASSEMBLY_EXCEPTION contain relative pointers to java.base legal texts.
+The default output does not include those target texts, which is why central-release supplies the complete files via --legal-notices.
+The generated Javadoc archives and final-javadoc-audit.txt verify the complete legal files in each release classifier.

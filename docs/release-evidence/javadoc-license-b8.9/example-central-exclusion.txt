@@ -1,0 +1,5 @@
+Central publishing exclusion evidence
+Generated the effective POM for `examples/spring-boot-authorization` with the `central-release` profile using Maven 3.10.1.
+Project: io.github.dhionson2:spring-boot-authorization-example:1.0.0
+Observed: `central-publishing-maven-plugin` resolves `skipPublishing=true` in the active configuration.
+The complete generated effective POM is retained locally; this concise record preserves the release-relevant result without committing generated dependency metadata or workspace paths.

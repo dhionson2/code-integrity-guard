@@ -1,0 +1,8 @@
+Distribution URL: https://downloads.apache.org/maven/maven-3/3.10.1/binaries/apache-maven-3.10.1-bin.zip
+Official SHA-512: 7a9950b642448423c71b86f5ca006018af93cece84b81be2463571be530e9200fa4ed8b1f60ff9781007b28dc64a7edba435544c877b3bb9a4a7af7657c39c03
+Verified local SHA-512: 7a9950b642448423c71b86f5ca006018af93cece84b81be2463571be530e9200fa4ed8b1f60ff9781007b28dc64a7edba435544c877b3bb9a4a7af7657c39c03
+Pinned Wrapper SHA-256: 9c1ef9174ef250a5009ed0dec97cbe8699acf7479add4e62bf7b0ea791c0adb5
+
+Official Apache Maven distribution dependency inventory:
+Guava 33.8.0-jre
+Plexus Utils 3.6.2

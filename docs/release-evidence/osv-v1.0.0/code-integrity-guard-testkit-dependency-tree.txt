@@ -1,0 +1,44 @@
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------< io.github.dhionson2:code-integrity-guard-testkit >----------
+[INFO] Building Code Integrity Guard Test Kit 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- dependency:3.7.0:tree (default-cli) @ code-integrity-guard-testkit ---
+[INFO] io.github.dhionson2:code-integrity-guard-testkit:jar:1.0.0
+[INFO] +- io.github.dhionson2:code-integrity-guard-core:jar:1.0.0:compile
+[INFO] +- org.junit.jupiter:junit-jupiter-api:jar:5.14.3:provided
+[INFO] |  +- org.opentest4j:opentest4j:jar:1.3.0:provided
+[INFO] |  +- org.junit.platform:junit-platform-commons:jar:1.14.3:provided (version managed from 1.14.3)
+[INFO] |  |  \- (org.apiguardian:apiguardian-api:jar:1.1.2:provided - omitted for duplicate)
+[INFO] |  \- org.apiguardian:apiguardian-api:jar:1.1.2:provided
+[INFO] +- org.springframework:spring-test:jar:6.2.15:provided
+[INFO] |  \- org.springframework:spring-core:jar:6.2.15:provided (version managed from 6.2.15)
+[INFO] |     \- org.springframework:spring-jcl:jar:6.2.15:provided (version managed from 6.2.15)
+[INFO] +- org.springframework.security:spring-security-core:jar:6.4.13:provided
+[INFO] |  +- org.springframework.security:spring-security-crypto:jar:6.4.13:provided (version managed from 6.4.13)
+[INFO] |  +- org.springframework:spring-aop:jar:6.2.15:provided (version managed from 6.2.13)
+[INFO] |  |  +- (org.springframework:spring-beans:jar:6.2.15:provided - version managed from 6.2.15; omitted for duplicate)
+[INFO] |  |  \- (org.springframework:spring-core:jar:6.2.15:provided - version managed from 6.2.15; omitted for duplicate)
+[INFO] |  +- org.springframework:spring-beans:jar:6.2.15:provided (version managed from 6.2.13)
+[INFO] |  |  \- (org.springframework:spring-core:jar:6.2.15:provided - version managed from 6.2.15; omitted for duplicate)
+[INFO] |  +- org.springframework:spring-context:jar:6.2.15:provided (version managed from 6.2.13)
+[INFO] |  |  +- (org.springframework:spring-aop:jar:6.2.15:provided - version managed from 6.2.15; omitted for duplicate)
+[INFO] |  |  +- (org.springframework:spring-beans:jar:6.2.15:provided - version managed from 6.2.15; omitted for duplicate)
+[INFO] |  |  +- (org.springframework:spring-core:jar:6.2.15:provided - version managed from 6.2.15; omitted for duplicate)
+[INFO] |  |  +- (org.springframework:spring-expression:jar:6.2.15:provided - version managed from 6.2.15; omitted for duplicate)
+[INFO] |  |  \- (io.micrometer:micrometer-observation:jar:1.14.14:provided - version managed from 1.14.14; omitted for duplicate)
+[INFO] |  +- (org.springframework:spring-core:jar:6.2.15:provided - version managed from 6.2.13; omitted for duplicate)
+[INFO] |  +- org.springframework:spring-expression:jar:6.2.15:provided (version managed from 6.2.13)
+[INFO] |  |  \- (org.springframework:spring-core:jar:6.2.15:provided - version managed from 6.2.15; omitted for duplicate)
+[INFO] |  \- io.micrometer:micrometer-observation:jar:1.14.14:provided (version managed from 1.14.13)
+[INFO] |     \- io.micrometer:micrometer-commons:jar:1.14.14:provided (version managed from 1.14.14)
+[INFO] +- jakarta.servlet:jakarta.servlet-api:jar:6.0.0:provided
+[INFO] \- org.hamcrest:hamcrest:jar:2.2:provided
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.534 s
+[INFO] Finished at: 2026-11-20T12:33:32-03:00
+[INFO] ------------------------------------------------------------------------
