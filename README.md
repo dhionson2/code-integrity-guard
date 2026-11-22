@@ -6,7 +6,7 @@ Code Integrity Guard (CIG) is a local, Java-first tool for checking whether decl
 
 - Java 21+ and Maven 3.10.1+ to build the project and execute its Maven Plugin (the checked-in Maven Wrapper uses Maven 3.10.1).
 - JUnit 5.14.3, Spring Boot 3.4.13 for the optional example, and PIT 1.30.2 with JUnit 5 PIT adapter 1.2.3 for the optional mutation run. See [version matrix](docs/version-matrix.md).
-- This repository uses Apache-2.0. The `io.github.dhionson2` namespace was verified for this project; the POM SCM URLs match the public repository and configured Git remote. See [release readiness](docs/release-readiness.md) for remaining release gates.
+- This repository uses Apache-2.0. Version 1.0.0 is published; the POM SCM URLs point to this public repository. See the [release readiness record](docs/release-readiness.md) for the dated technical review and evidence.
 
 Build locally with `./mvnw clean verify` (Windows: `mvnw.cmd clean verify`).
 
@@ -16,7 +16,7 @@ Build locally with `./mvnw clean verify` (Windows: `mvnw.cmd clean verify`).
 
 ## Installation/use
 
-After a release is published, add the library dependencies you need. Example consumer dependencies:
+Version 1.0.0 is available from [Maven Central](https://central.sonatype.com/artifact/io.github.dhionson2/code-integrity-guard-maven-plugin). Add the library dependencies you need. Example consumer dependency:
 
 ```xml
 <dependency>
@@ -30,6 +30,10 @@ After a release is published, add the library dependencies you need. Example con
 The `testkit` declares JUnit Jupiter API, Spring Test, Spring Security Core, Jakarta Servlet API, and Hamcrest with Maven scope `provided`; Maven does not propagate these dependencies transitively to consumers. Consumers must add compatible dependencies with scope `test` for the APIs they use: JUnit Jupiter API for `EvidenceExtension` and `ContractTest`; Spring Test, Spring MVC, and Jakarta Servlet API for `AuthorizationChecks`; Spring Security Core when the helper reads an authenticated principal; and Hamcrest when using the helper's `ResultMatcher` methods. Consumers using Spring Security MockMvc post-processors or other Spring Security Test APIs must also declare Spring Security Test directly with scope `test`. The project’s tested version set is recorded in [version matrix](docs/version-matrix.md); the consumer owns version alignment with its Spring/JUnit stack.
 
 The V1.0.0 security review records limited maintainer acceptance of residual Spring advisories in the audited `testkit`/`provided` scope. Those advisories were not fixed by this release, and the acceptance does not cover consumer applications. Consumers must select and maintain supported Spring versions, track upstream advisories, and assess their own use of untrusted SpEL expressions, data binding, and Spring Security configuration. See [release readiness](docs/release-readiness.md) and the [supply-chain review](docs/supply-chain-review.md) for the exact findings and scope. The educational Spring Boot example is excluded from the release artifacts.
+
+## Community
+
+See [Contributing](CONTRIBUTING.md), the [Code of Conduct](CODE_OF_CONDUCT.md), [Security policy](SECURITY.md), and the initial [public roadmap](docs/community/roadmap.md). Roadmap items are proposals without promised dates; all pull requests require maintainer review and passing CI.
 
 Create `.cig/contracts.tsv` with UTF-8 rows (tabs separate fields):
 
@@ -107,4 +111,4 @@ GitHub Actions runs `clean verify` with read-only repository permissions and no 
 
 ## Limitations
 
-This V1 implementation does not cryptographically authenticate local evidence/PIT provenance, aggregate multi-module evidence, or invoke Maven Invoker integration tests automatically. Freshness checks prevent accidental reuse but do not defeat a hostile local process that can replace reports. The extension is JUnit Jupiter-only. The `io.github.dhionson2` Central namespace was verified for this project; remaining release gates are tracked in `docs/release-readiness.md`.
+This V1 implementation does not cryptographically authenticate local evidence/PIT provenance, aggregate multi-module evidence, or invoke Maven Invoker integration tests automatically. Freshness checks prevent accidental reuse but do not defeat a hostile local process that can replace reports. The extension is JUnit Jupiter-only. The dated [release readiness record](docs/release-readiness.md) preserves the release audit history and its limitations.

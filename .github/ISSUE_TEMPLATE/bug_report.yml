@@ -1,0 +1,60 @@
+name: Bug report
+description: Report a reproducible problem in Code Integrity Guard.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include secrets, customer data, or vulnerability exploit details. Use the private reporting instructions in SECURITY.md for security concerns.
+  - type: input
+    id: cig-version
+    attributes:
+      label: Code Integrity Guard version
+      description: Include the release or commit you are using.
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Core evaluation
+        - JUnit testkit
+        - PIT adapter
+        - Reports
+        - Maven plugin
+        - Documentation
+        - Build or CI
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include Java, Maven, operating system, and relevant framework versions. Remove usernames, local paths, and other private details.
+      placeholder: Java / Maven / OS / relevant versions
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest safe, reproducible example.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include only a redacted, relevant log excerpt if needed. Never attach secrets or real user data.
+    validations:
+      required: true

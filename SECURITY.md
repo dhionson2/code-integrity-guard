@@ -1,5 +1,5 @@
 # Security policy
 
-Report suspected vulnerabilities privately to the repository maintainer using the contact listed on the verified repository hosting profile. Do not file public issues containing exploit details or secrets. This repository currently has no verified public repository URL or dedicated security mailbox; until those are configured, coordinate privately with the project owner.
+Report suspected vulnerabilities privately. If GitHub's private vulnerability reporting is available for this repository, use that channel. Otherwise contact the maintainer using the contact information on the [verified project owner profile](https://github.com/dhionson2). Do not file public issues or pull requests containing vulnerability details, exploit material, secrets, or private data.
 
-Supported release: none yet (pre-release). Do not deploy the vulnerable demo. CIG reports evidence and cannot prove an application secure.
+The current stable release is 1.0.0. Review the release notes and release audit documentation for the supported Java baseline and the scope of the release review. The vulnerable Spring Boot example is educational and must not be deployed. CIG reports observed evidence and cannot prove an application secure.

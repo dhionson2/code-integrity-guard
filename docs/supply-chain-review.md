@@ -1,6 +1,8 @@
 # B8 — Auditoria de segurança e licenças (2026-11-19)
 
-**Status atual (B8.10): riscos Spring residuais aceitos de forma limitada pelo mantenedor para a composição auditada da RC 1.0.0; não estão corrigidos.** O gate técnico de avisos dos Javadocs foi aprovado em B8.9, sem certificação jurídica independente. A RC está pronta para revisão humana do commit no GitHub; publicação no Maven Central permanece não autorizada. As seções anteriores preservam os resultados e decisões históricos de cada etapa; a decisão vigente está em B8.10.
+> **Historical audit record:** The dated B8 sections preserve the evidence and decisions made at each review stage. Version 1.0.0 was subsequently published on 2026-11-21; statements below that publication was pending describe the earlier review state. Publication did not mean that recorded residual findings were fixed or that the review applies to consumer applications.
+
+**Status da revisão B8.10:** riscos Spring residuais aceitos de forma limitada pelo mantenedor para a composição auditada da RC 1.0.0; não estão corrigidos. O gate técnico de avisos dos Javadocs foi aprovado em B8.9, sem certificação jurídica independente. As seções anteriores preservam os resultados e decisões históricos de cada etapa.
 
 
 ## B8.1 — Remediação aplicada (2026-11-19)

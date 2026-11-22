@@ -1,5 +1,7 @@
 # Release readiness — Code Integrity Guard 1.0.0
 
+> **Historical audit record:** The B8.10 status and later dated checkpoints below preserve the decisions and evidence as they stood at each review stage. Version 1.0.0 was subsequently published on 2026-11-21; pre-publication statements in this log are historical and do not describe current artifact availability. Publication did not change or resolve the recorded technical findings. See the [current release notes](release-notes/1.0.0.md).
+
 **Status atual (B8.10): RC 1.0.0 pronta para revisão humana do commit no GitHub; publicação no Maven Central ainda não autorizada.** O mantenedor aceitou de forma limitada os riscos Spring residuais descritos abaixo, sem classificá-los como corrigidos. O gate técnico dos avisos nos cinco Javadoc JARs foi aprovado em B8.9; isso não é certificação jurídica independente. As decisões antigas de NO-GO em B8.6/B8.8 registram o estado daquela revisão e são supersedidas pelo aceite limitado documentado em B8.10. Nenhum commit, push, tag, assinatura, upload ou publicação foi executado nesta etapa.
 
 ## Blocker matrix
