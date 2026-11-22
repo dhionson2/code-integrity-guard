@@ -1,6 +1,6 @@
-# Implementation plan — Code Integrity Guard 1.0.0
+# Implementation plan — Code Integrity Guard
 
-This document records the implementation plan, technical requirements, and validation status for Code Integrity Guard 1.0.0.
+This document records the original implementation plan and validation status. Version 1.0.0 was published on 2026-11-21; dated release audit history remains in `docs/release-readiness.md` and `docs/supply-chain-review.md`. Follow-up work is collected as proposals in `docs/community/roadmap.md`.
 
 ## Phase 1 — Architecture and foundation
 
@@ -33,11 +33,11 @@ This document records the implementation plan, technical requirements, and valid
 
 - [x] English onboarding, contracts, PIT, CI, architecture, threat model, changelog, and draft notes.
 - [x] Central publishing profile configured with sources/Javadoc/signing and manual publish behavior.
-- [ ] Verify `io.github.dhionson2` namespace ownership and replace proposed SCM URL with the verified repository URL.
-- [ ] Run dependency/license/SCA review and obtain release security review.
-- [ ] Complete a release build with a real signing key in an authorized environment and Central validation.
-- [ ] Publish only after explicit owner approval; no publishing was performed.
+- [x] Verify `io.github.dhionson2` namespace ownership and use the verified public repository URL in SCM metadata.
+- [x] Complete the dependency/license/SCA and release security reviews recorded in the dated audit documents.
+- [x] Complete the authorized release build and Maven Central validation for version 1.0.0.
+- [x] Publish version 1.0.0 after maintainer approval; see the [published GitHub release](https://github.com/dhionson2/code-integrity-guard/releases/tag/v1.0.0).
 
 ## Verifiable completion criteria
 
-The local implementation compiles/tests, demo outcomes are covered, an independent project invokes the real goal, reports are emitted, and CI/docs exist. Release readiness remains blocked on identity/namespace and publication prerequisites; see `docs/release-readiness.md`.
+The initial implementation and release preparation are complete. The known Maven Invoker automation gap remains open for follow-up; the public roadmap records candidate work without release-date commitments.

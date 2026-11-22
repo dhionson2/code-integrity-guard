@@ -1,0 +1,33 @@
+name: Documentation improvement
+description: Report missing, unclear, or incorrect documentation.
+title: "[Docs]: "
+labels: [documentation]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Documentation location
+      description: Link the page or identify the file and section.
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is unclear or incorrect?
+      description: Describe the reader task that is blocked or confusing.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested improvement
+      description: A proposed example, wording, or structure is helpful but not required.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Related references
+      description: Link relevant code, examples, or other documentation.
+    validations:
+      required: false

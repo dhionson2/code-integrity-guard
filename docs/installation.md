@@ -6,7 +6,7 @@ Use Java 21+ and Maven 3.10.1+ to build the project and execute the Code Integri
 
 ## Consumer setup
 
-The 1.0.0 release candidate is prepared locally and remains unpublished pending human release review. For local experiments with this checkout, build/install the modules with `mvnw.cmd clean install` and use version `1.0.0`; Maven Central consumers can use these coordinates after publication is explicitly authorized.
+Version 1.0.0 is the current stable release and is available from [Maven Central](https://central.sonatype.com/artifact/io.github.dhionson2/code-integrity-guard-maven-plugin). For local experiments with this checkout, build and install the modules with `mvnw.cmd clean install` on Windows or `./mvnw clean install` on Unix-like systems. Consumer dependency examples use version `1.0.0`.
 
 1. Write independently authored contract rows in `.cig/contracts.tsv`.
 2. Register `EvidenceExtension` on JUnit Jupiter test classes and annotate methods with stable test IDs.

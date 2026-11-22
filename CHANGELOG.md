@@ -1,6 +1,7 @@
 # Changelog
 
-## 1.0.0 — unreleased
+## 1.0.0 — 2026-11-21
 
-- Initial Java 21 multi-module implementation of contract evidence, JUnit test kit, PIT XML reader, local JSON/HTML reports, Maven `audit` goal, and Spring authorization demonstration.
-- Release is not published; Central namespace ownership and release validation remain pending.
+- First stable release of the Java 21 multi-module toolkit.
+- Includes contract and test-execution evidence, the JUnit Jupiter testkit, PIT XML reader, local JSON/HTML reports, Maven `prepare-evidence`, `seal-evidence`, and `audit` goals, and an educational Spring authorization example.
+- Published artifacts are available from Maven Central. See the [release notes](docs/release-notes/1.0.0.md) and [GitHub release](https://github.com/dhionson2/code-integrity-guard/releases/tag/v1.0.0).
