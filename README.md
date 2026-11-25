@@ -16,6 +16,8 @@ Build locally with `./mvnw clean verify` (Windows: `mvnw.cmd clean verify`).
 
 ## Installation/use
 
+Start with the [Consumer Quick Start](docs/consumer-quick-start.md) for a concise Java 21, JUnit, Maven plugin, and report walkthrough.
+
 Version 1.0.0 is available from [Maven Central](https://central.sonatype.com/artifact/io.github.dhionson2/code-integrity-guard-maven-plugin). Add the library dependencies you need. Example consumer dependency:
 
 ```xml
