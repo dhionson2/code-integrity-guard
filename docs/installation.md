@@ -6,6 +6,8 @@ Use Java 21+ and Maven 3.10.1+ to build the project and execute the Code Integri
 
 ## Consumer setup
 
+For a short setup path using the published artifacts, JUnit Jupiter, the Maven goal, and report locations, see the [Consumer Quick Start](consumer-quick-start.md).
+
 Version 1.0.0 is the current stable release and is available from [Maven Central](https://central.sonatype.com/artifact/io.github.dhionson2/code-integrity-guard-maven-plugin). For local experiments with this checkout, build and install the modules with `mvnw.cmd clean install` on Windows or `./mvnw clean install` on Unix-like systems. Consumer dependency examples use version `1.0.0`.
 
 1. Write independently authored contract rows in `.cig/contracts.tsv`.
