@@ -12,7 +12,7 @@ Contributions are welcome. Please open or find an issue before starting a substa
 
 ## Local verification
 
-The current CI workflow runs the reactor and its separate consumer fixture. Equivalent commands are:
+The current CI workflow runs the reactor and its separate consumer fixture. The reactor verification also runs a Maven Invoker integration test from `code-integrity-guard-maven-plugin`, using a temporary consumer and isolated build/repository directories. Equivalent commands are:
 
     ./mvnw --batch-mode --no-transfer-progress clean install
     ./mvnw --batch-mode --no-transfer-progress -f integration-consumer/pom.xml clean verify

@@ -1,0 +1,16 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>sample.cig</groupId><artifactId>isolated-invoker-consumer</artifactId><version>1.0.0</version>
+  <properties><maven.compiler.release>21</maven.compiler.release><project.build.sourceEncoding>UTF-8</project.build.sourceEncoding><junit.version>5.14.3</junit.version><cig.test.class>PassingContractTest</cig.test.class></properties>
+  <dependencies>
+    <dependency><groupId>io.github.dhionson2</groupId><artifactId>code-integrity-guard-testkit</artifactId><version>1.0.0</version><scope>test</scope></dependency>
+    <dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter</artifactId><version>${junit.version}</version><scope>test</scope></dependency>
+    <dependency><groupId>org.springframework</groupId><artifactId>spring-test</artifactId><version>7.0.10</version><scope>test</scope></dependency>
+    <dependency><groupId>org.springframework</groupId><artifactId>spring-webmvc</artifactId><version>7.0.10</version><scope>test</scope></dependency>
+    <dependency><groupId>jakarta.servlet</groupId><artifactId>jakarta.servlet-api</artifactId><version>6.1.0</version><scope>test</scope></dependency>
+  </dependencies>
+  <build><plugins>
+    <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-surefire-plugin</artifactId><version>3.5.2</version><configuration><includes><include>**/${cig.test.class}.java</include></includes><systemPropertyVariables><cig.evidence.file>${project.build.directory}/cig-evidence.tsv</cig.evidence.file><cig.scenario.evidence.file>${project.build.directory}/cig-scenario-evidence.tsv</cig.scenario.evidence.file><cig.scenarios.file>${project.basedir}/.cig/scenarios.tsv</cig.scenarios.file><cig.run.manifest.file>${project.build.directory}/cig-evidence-run.properties</cig.run.manifest.file></systemPropertyVariables></configuration></plugin>
+    <plugin><groupId>io.github.dhionson2</groupId><artifactId>code-integrity-guard-maven-plugin</artifactId><version>1.0.0</version><executions><execution><id>prepare</id><phase>initialize</phase><goals><goal>prepare-evidence</goal></goals></execution><execution><id>seal</id><phase>verify</phase><goals><goal>seal-evidence</goal></goals></execution><execution><id>audit</id><phase>verify</phase><goals><goal>audit</goal></goals></execution></executions><configuration><contractsFile>${project.basedir}/.cig/contracts.tsv</contractsFile><evidenceFile>${project.build.directory}/cig-evidence.tsv</evidenceFile><scenariosFile>${project.basedir}/.cig/scenarios.tsv</scenariosFile><scenarioEvidenceFile>${project.build.directory}/cig-scenario-evidence.tsv</scenarioEvidenceFile><runManifestFile>${project.build.directory}/cig-evidence-run.properties</runManifestFile><outputDirectory>${project.build.directory}/code-integrity-guard</outputDirectory><failOnUnverified>true</failOnUnverified><failOnInconclusive>true</failOnInconclusive></configuration></plugin>
+  </plugins></build>
+</project>

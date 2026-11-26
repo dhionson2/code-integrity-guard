@@ -1,0 +1,2 @@
+# id	severity	scope	description	testIds	scenarioIds
+INVOKER-CONSUMER	HIGH	consumer fixture	Invoker Maven process records current test and scenario evidence	invoker.consumerContract	invoker.aliceReadsBobsResource
