@@ -2,6 +2,8 @@
 
 ## Boundaries
 
+See the [module map](module-map.md) for the current public artifacts, the educational example, and POM dependency directions.
+
 `core` owns immutable contract/evidence types and deterministic evaluation. `testkit` emits evidence from actual JUnit invocation callbacks and offers optional Spring MVC matchers. `pit-adapter` parses existing PIT XML; it never creates mutations. `report` renders local JSON/HTML. `maven-plugin` coordinates inputs and quality gates. The Spring Boot example is an independent consumer. Dependencies point toward core; core has no Maven, Spring, PIT, or AI dependencies.
 
 ## Trust and evidence

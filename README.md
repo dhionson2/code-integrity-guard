@@ -12,7 +12,7 @@ Build locally with `./mvnw clean verify` (Windows: `mvnw.cmd clean verify`).
 
 ## Modules
 
-`core` contains framework-free contracts/evaluation. `testkit` provides JUnit execution evidence and a Spring MVC helper that performs declared authorization scenarios. `pit-adapter` reads an existing PIT XML report; it does not run a mutation engine. `report` writes JSON/HTML. `maven-plugin` provides `code-integrity-guard:audit`. `examples/spring-boot-authorization` is a synthetic local-only demo.
+`core` contains framework-free contracts/evaluation. `testkit` provides JUnit execution evidence and a Spring MVC helper that performs declared authorization scenarios. `pit-adapter` reads an existing PIT XML report; it does not run a mutation engine. `report` writes JSON/HTML. `maven-plugin` provides `code-integrity-guard:audit`. `examples/spring-boot-authorization` is a synthetic local-only demo. See the [module map](docs/architecture/module-map.md) for artifact responsibilities and dependency direction.
 
 ## Installation/use
 
