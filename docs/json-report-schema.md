@@ -7,3 +7,5 @@ PIT reports provide the class scope found in mutation rows and the separately co
 Evidence rows carry run ID, project origin and process-unique JUnit invocation ID. Scenario evidence also contains scenario ID and observed HTTP status. Declared scenarios include policy values (type, actor/owner, resource, operation, identity header, and expected status); the HTML presents these beside observed results. HTML and JSON are written side-by-side to `target/code-integrity-guard/`.
 
 The JSON Schema document is [json-report-schema.json](json-report-schema.json). It permits additive fields and null values in display strings. Consumers should check `schemaVersion` before strict parsing. JSON is serialized by Jackson; tests parse generated output with Gson to independently check syntax and values. HTML escaping remains a separate encoding step.
+
+For a synthetic example report showing each status, see [report status examples](report-status-examples.md).
