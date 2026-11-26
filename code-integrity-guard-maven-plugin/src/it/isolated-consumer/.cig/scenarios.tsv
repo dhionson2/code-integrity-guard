@@ -1,0 +1,2 @@
+# scenarioId	contractId	testId	type	actor	resourceOwner	resource	operation	actorHeader	expectedStatus
+invoker.aliceReadsBobsResource	INVOKER-CONSUMER	invoker.consumerContract	CROSS_OWNER	alice	bob	/resource/42	GET /resource/42	X-Actor	404
